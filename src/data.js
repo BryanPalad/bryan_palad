@@ -1,5 +1,7 @@
 //  icons
 import {
+    FiFacebook,
+    FiLinkedin,
     FiYoutube,
     FiInstagram,
     FiGithub,
@@ -20,27 +22,38 @@ import {
   import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
   
   // projects images
-  import Project1 from './assets/img/projects/p1.webp';
-  import Project2 from './assets/img/projects/p2.webp';
-  import Project3 from './assets/img/projects/p3.webp';
-  import Project4 from './assets/img/projects/p4.webp';
-  import Project5 from './assets/img/projects/p5.webp';
-  import Project6 from './assets/img/projects/p6.webp';
+  import calculator from './assets/img/projects/Calculator.PNG';
+  import teslaClone from './assets/img/projects/Tesla-clone.PNG';
+  import expenseTracker from './assets/img/projects/expense.PNG';
+  import weatherApp from './assets/img/projects/Weather App.PNG';
+  import cryptoverse from './assets/img/projects/Cryptoverse.PNG';
+  import collegeProject from './assets/img/projects/FernandezDentalClinic.PNG';
   
+  //projects clips 
+  import calculatorClip from './assets/clips/calculatorClip.webm';
+  import teslaCloneClip from './assets/clips/tesla.webm';
+  import expenseTrackerClip from './assets/clips/expense.webm';
+  import weatherAppClip from './assets/clips/weather.webm';
+  import cryptoverseClip from './assets/clips/cryptoverse.webm';
+
   // skills images
-  import SkillImg1 from './assets/img/skills/html5.png';
-  import SkillImg2 from './assets/img/skills/css3.png';
-  import SkillImg3 from './assets/img/skills/js.png';
-  import SkillImg4 from './assets/img/skills/reactjs.png';
-  import SkillImg5 from './assets/img/skills/nextjs.png';
-  import SkillImg6 from './assets/img/skills/nodejs.png';
-  import SkillImg7 from './assets/img/skills/git.png';
-  import SkillImg8 from './assets/img/skills/figma.png';
+  import html from './assets/img/skills/html5.png';
+  import css from './assets/img/skills/css3.png';
+  import js from './assets/img/skills/js.png';
+  import java from './assets/img/skills/java.png';
+  import php from './assets/img/skills/php.png';
+  import csharp from './assets/img/skills/c-sharp.png';
+  import react from './assets/img/skills/reactjs.png';
+  import git from './assets/img/skills/git.png';
+  import mysql from './assets/img/skills/mysql.png';
+  import mui from './assets/img/skills/mui.png';
+  import antdesign from './assets/img/skills/antdesign.png';
+  import tailwind from './assets/img/skills/tailwind.png';
   
   // testimonial images
-  import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
-  import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
-  import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
+  import TestiImage1 from './assets/img/testimonials/mark.avif';
+  import TestiImage2 from './assets/img/testimonials/billgates.webp';
+  import TestiImage3 from './assets/img/testimonials/steve.jpg';
   
   // navigation
   export const navigation = [
@@ -73,23 +86,26 @@ import {
   // social
   export const social = [
     {
-      icon: <FiYoutube />,
-      href: '',
+      icon: <FiFacebook size={25}/>,
+      href: 'https://www.facebook.com/BryanPalad.15',
     },
     {
-      icon: <FiInstagram />,
-      href: '',
+      icon: <FiLinkedin size={25}/>,
+      href: 'https://www.linkedin.com/in/bryan-justin-palad-4632b3234/',
     },
     {
-      icon: <FiGithub />,
-      href: '',
+      icon: <FiGithub size={25}/>,
+      href: 'https://github.com/BryanPalad',
     },
     {
-      icon: <FiDribbble />,
+      icon: <FiDribbble size={25}/>,
       href: '',
     },
   ];
   
+  export const typing = [
+    " Self-Taught Web Developer", " Aspiring Software Engineer"," BSIT Graduate"," Enthusiastic Dev"
+  ]
   // companies
   export const brands = [
     {
@@ -118,39 +134,56 @@ import {
   export const projectsData = [
     {
       id: '1',
-      image: Project1,
-      name: 'project name 1',
-      category: 'UI/UX design',
+      image: calculator,
+      name: 'Calculator',
+      category: 'web development',
+      description: 'React Js',
+      clip: calculatorClip,
+      pointer: false
     },
     {
       id: '2',
-      image: Project2,
-      name: 'project name 2',
+      image: teslaClone,
+      name: 'Tesla Clone',
       category: 'web development',
+      description: 'React Js / Styled Components',
+      clip: teslaCloneClip,
+      pointer: false
     },
     {
       id: '3',
-      image: Project3,
-      name: 'project name 3',
-      category: 'UI/UX design',
+      image: expenseTracker,
+      name: 'Expense Tracker',
+      category: 'web development',
+      description: 'React Js / React Redux',
+      clip: expenseTrackerClip,
+      pointer: false
     },
     {
       id: '4',
-      image: Project4,
-      name: 'project name 4',
-      category: 'branding',
+      image: weatherApp,
+      name: 'Weather/News App',
+      category: 'web development',
+      description: 'React Js / Redux / 3 Api Integration / MUI',
+      clip: weatherAppClip,
+      pointer: false
     },
     {
       id: '5',
-      image: Project5,
-      name: 'project name 5',
+      image: cryptoverse,
+      name: 'Cryptoverse',
       category: 'web development',
+      description: 'React Js / 2 Api Integration / Ant Design / Chart Js',
+      clip: cryptoverseClip,
+      pointer: false
     },
     {
       id: '6',
-      image: Project6,
-      name: 'project name 6',
-      category: 'web development',
+      image: collegeProject,
+      name: 'Online Appt. Sys for Fernandez Dental Clinic',
+      category: 'college project',
+      description: 'PHP / Bootstrap / MySQL',
+      pointer: true
     },
   ];
   
@@ -160,41 +193,50 @@ import {
       name: 'all',
     },
     {
-      name: 'UI/UX Design',
-    },
-    {
       name: 'web development',
     },
     {
-      name: 'branding',
+      name: 'college project',
     },
   ];
   
   // skill
   export const skills = [
     {
-      image: SkillImg1,
+      image: html,
     },
     {
-      image: SkillImg2,
+      image: css,
     },
     {
-      image: SkillImg3,
+      image: js,
     },
     {
-      image: SkillImg4,
+      image: java,
     },
     {
-      image: SkillImg5,
+      image: csharp,
     },
     {
-      image: SkillImg6,
+      image: php,
     },
     {
-      image: SkillImg7,
+      image: react,
     },
     {
-      image: SkillImg8,
+      image: mysql,
+    },
+    {
+      image: git,
+    },
+    {
+      image: mui,
+    },
+    {
+      image: antdesign,
+    },
+    {
+      image: tailwind,
     },
   ];
   
@@ -202,28 +244,28 @@ import {
   export const services = [
     {
       icon: <FiLayout />,
-      name: 'Web Design',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-    {
-      icon: <FiSettings />,
       name: 'Web Development',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
     },
     {
-      icon: <FiPenTool />,
-      name: 'Branding',
+      icon: <FiSettings />,
+      name: 'Responsive Web Design',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
     },
     {
-      icon: <FiTag />,
-      name: 'SEO',
+      icon: <FiPenTool />,
+      name: 'On Progress',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
     },
+    // {
+    //   icon: <FiTag />,
+    //   name: 'SEO',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    // },
   ];
   
   // testimonials
@@ -231,23 +273,23 @@ import {
     {
       authorImg: TestiImage1,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-      authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+        'The biggest risk is not taking any risk... In a world that changing really quickly, the only strategy that is guaranteed to fail is not taking risks.',
+      authorName: 'Mark Zuckerberg',
+      authorPosition: 'CEO of Facebook',
     },
     {
       authorImg: TestiImage2,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-      authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+        'Do not compare yourself with anyone in this world ... if you do so, you are insulting yourself.',
+      authorName: 'Bill Gates',
+      authorPosition: 'Founder of Microsoft',
     },
     {
       authorImg: TestiImage3,
       authorText:
-        'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-      authorName: 'Olivia Doe',
-      authorPosition: 'Head of Design, Google',
+        "Your time is limited, so don't waste it living someone else's life",
+      authorName: 'Steve Jobs',
+      authorPosition: 'CEO of Apple',
     },
   ];
   
@@ -257,13 +299,13 @@ import {
       icon: <FiMail />,
       title: 'Have a question?',
       subtitle: 'I am here to help you.',
-      description: 'Email me at hello@youremail.com',
+      description: 'Email me at paladbryanj@gmail.com',
     },
     {
       icon: <FiMapPin />,
       title: 'Current Location',
-      subtitle: 'Bucharest, Romania',
-      description: 'Serving clients worldwide',
+      subtitle: 'Brgy. Banlic, Cabuyao Laguna 4025',
+      description: '',
     },
   ];
   

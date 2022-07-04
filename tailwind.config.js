@@ -31,9 +31,10 @@ module.exports = {
         primary: '#050402',
         secondary: '#1C1D24',
         tertiary: '#131419',
+        error: '#bd321c',
         accent: {
-          DEFAULT: '#ac6b34',
-          hover: '#925a2b',
+          DEFAULT: '#4688a3',
+          hover: '#60b4d6',
         },
         paragraph: '#878e99',
       },

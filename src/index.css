@@ -42,4 +42,10 @@
   .active {
     @apply text-accent;
   }
+  .errorTextInput {
+    @apply mt-2 text-error
+  }
+  .errorTextArea {
+    @apply  text-error
+  }
 }
