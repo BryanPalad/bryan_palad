@@ -309,13 +309,13 @@ export const services = [
     img: responsive,
     name: "Responsive Web Design",
     description:
-      "Check my mini projects and this portfolio for responsive checking. Frameworks that i used : Bootstrap, Tailwind CSS, Material UI and Ant Design mostly on React Projects",
+      "Check my mini projects and this portfolio for responsive checking. Frameworks that i used: Bootstrap, Tailwind CSS, Material UI and Ant Design mostly on React Projects",
   },
   {
     img: inprogress,
     name: "On Progress",
     description:
-      "Planning to learn new prog. languages such as python, advance java w/spring or android/ios development...",
+      "Planning to learn new prog. languages such as python, advance java w/spring or android/ios and back-end development...",
   },
 ];
 

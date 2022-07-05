@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ReactTypingEffect from "react-typing-effect";
 import CV from "../../assets/files/Bryan_Palad_CV.pdf";
 import profile from "../../assets/img/gradpic.jpg";
 // import profile2 from "../../assets/img/my_pic.png";
 import downArrow from "../../assets/img/down-arrow.svg";
+import Lottie from "react-lottie";
+import * as programming from "../../assets/clips/waving.json";
 import Fade from "react-reveal/Fade";
 import { typing } from "../../data";
 import { Link } from "react-scroll";
@@ -11,10 +13,27 @@ const Hero = () => {
   const [arrow, setArrow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       return window.scrollY > 20 ? setArrow(true) : setArrow(false);
-    })
-  })
+    });
+  });
+
+  const style = {
+    color: "white",
+    marginTop: '-10px',
+    marginLeft: '10px',
+    transform: 'rotate(320deg)'
+  };
+
+  const loadingAnimation = {
+    loop: true,
+    autoplay: true,
+    animationData: programming.default,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section
       id="home"
@@ -25,8 +44,15 @@ const Hero = () => {
           {/* left-side */}
           <Fade left>
             <div className="flex-1 flex flex-col items-center lg:items-start">
-              <p className="text-xl text-accent text-md mb-[22px]">
-                Hi there, I'm Bryan 👋
+
+              <p className="text-xl flex text-accent text-md mb-[22px]">
+                Hi there, I'm Bryan{" "}
+                  <Lottie
+                    options={loadingAnimation}
+                    style={style}
+                    height={40}
+                    width={40}
+                  />
               </p>
               <h1 className="text-3xl text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
                 I Build & Design <br /> Web Interfaces.
@@ -82,7 +108,13 @@ const Hero = () => {
             offset={-70}
             className="transition-all duration-300"
           >
-            <img className={`${arrow ? 'opacity-0' : ''} mb-2 h-14 l-14 cursor-pointer animate-bounce transition delay-300`} src={downArrow} alt='down-arrow'/>
+            <img
+              className={`${
+                arrow ? "opacity-0" : ""
+              } mb-2 h-14 l-14 cursor-pointer animate-bounce transition delay-300`}
+              src={downArrow}
+              alt="down-arrow"
+            />
           </Link>
         </div>
       </div>

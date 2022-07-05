@@ -67,8 +67,8 @@ const NavMobile = () => {
             {
                 navigation.map((item, index) => {
                     return (
-                        <li key={index} onClick={() => setIsOpen(false)} className='mb-8'>
-                            <Link to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize'>{item.name}</Link>
+                        <li key={index} className='mb-8'>
+                            <Link onClick={() => setIsOpen(false)} to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize'>{item.name}</Link>
                         </li>
                     )
                 })

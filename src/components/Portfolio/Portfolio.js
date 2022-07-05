@@ -12,7 +12,7 @@ const Portfolio = () => {
           <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-right-[220px] before:hidden before:lg:block">
             My projects
           </h2>
-          <p className="subtitle">Here are some of my built projects...</p>
+          <p className="subtitle mb-10 lg:mb-20">Here are some of my built projects...</p>
         </div>
         </Fade>
         <Projects />
