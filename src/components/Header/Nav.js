@@ -7,10 +7,12 @@ import {navigation} from '../../data';
 //import link
 import {Link} from 'react-scroll';
 
+// import {FiMoon, FiSun} from 'react-icons/fi';
+
 const Nav = () => {
   return (
     <nav>
-      <ul className='flex space-x-8 capitalize text-[18px]'>
+      <ul className='flex space-x-8 capitalize text-[17px] items-center'>
         {navigation.map((item, index) => {
           return (
             <li className='text-white hover:text-accent cursor-pointer' key={index}>
@@ -20,6 +22,7 @@ const Nav = () => {
             </li>
           )
         })}
+        {/* <FiMoon/><FiSun/> */}
       </ul>
     </nav>
   )

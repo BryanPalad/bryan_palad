@@ -1,9 +1,16 @@
 import React from "react";
+import { Fade } from "react-reveal";
 
 import { ClipLoader } from "react-spinners";
 
 // import contact data
 import { contact } from "../../data";
+
+
+const iframe = '<iframe class="ml-0 md:ml-16" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1149.7606347999063!2d121.13808394661991!3d14.234640126486074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1657019013675!5m2!1sen!2sph" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'; 
+function Iframe(props) {
+  return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
+}
 
 const Contact = ({
   form,
@@ -16,22 +23,25 @@ const Contact = ({
   audioPlayer,
   NotificationSound,
 }) => {
+
+  
   return (
     <section id="contact" className="section bg-primary">
       <div className="container mx-auto">
         {/* section title */}
+        <Fade bottom>
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
             Contact Me
           </h2>
           <p className="subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos
-            tempore saepe eaque quasi minima quibusdam adipisci animi facere ex.
+           You can directly connect me from here, Just fill up the information below, I am very responsive to messages...
           </p>
         </div>
+        </Fade>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">
           {/* INFO */}
-          <div className="flex flex-1 flex-col space-y-8 mb-12 lg:mb-0 lg:pt-2 lg:text-left lg:items-start">
+          <div className="flex justify-center items-center flex-1 flex-col space-y-8 mb-12 lg:items-left lg:justify-start lg:mb-0 lg:pt-2 lg:text-left lg:items-start">
             {contact.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
@@ -47,8 +57,8 @@ const Contact = ({
                 </div>
               );
             })}
+            <Iframe iframe={iframe}/>
           </div>
-
           {/* FORM */}
           <form
             ref={form}

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import ReactTypingEffect from "react-typing-effect";
 import CV from "../../assets/files/Bryan_Palad_CV.pdf";
 import profile from "../../assets/img/gradpic.jpg";
+// import profile2 from "../../assets/img/my_pic.png";
 import downArrow from "../../assets/img/down-arrow.svg";
 import Fade from "react-reveal/Fade";
 import { typing } from "../../data";
@@ -17,7 +18,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] flex items-center bg-secondary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
+      className="h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
       <div className="container mx-auto h-full flex flex-col justify-center">
         <div className="flex items-center h-full pt-8">
@@ -37,7 +38,7 @@ const Hero = () => {
                   cursorRenderer={(cursor) => <h1>{cursor}</h1>}
                   speed={50}
                   eraseSpeed={50}
-                  eraseDelay={1000}
+                  eraseDelay={1500}
                   typingDelay={120}
                   displayTextRenderer={(text, i) => {
                     return (
