@@ -22,7 +22,6 @@ const Nav = () => {
             </li>
           )
         })}
-        {/* <FiMoon/><FiSun/> */}
       </ul>
     </nav>
   )

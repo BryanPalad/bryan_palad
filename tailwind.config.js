@@ -34,8 +34,8 @@ module.exports = {
         primaryWhite: '#ffffff',
         error: '#bd321c', //red
         accent: {
-          DEFAULT: '#4688a3', //teal
-          hover: '#60b4d6', //lighteal
+          DEFAULT: '#02b1c2', //yellow
+          hover: '#3ae2f2', //lightyellow
         },
         paragraph: '#878e99',
       },

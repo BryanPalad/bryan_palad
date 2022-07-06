@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { Fade } from "react-reveal";
 // import image
-import Image from "../../assets/img/anonymous.jpg";
+import image1 from '../../assets/img/about/tspc.jpg'
 import { BsEmojiSmile } from "react-icons/bs";
 import { MdImportantDevices } from "react-icons/md";
 
@@ -18,9 +18,9 @@ const About = () => {
         <div className="flex flex-col xl:flex-row gap-24">
           <img
             className="object-cover h-full w-[566px] md:mx-auto  lg:mx-0 rounded-2xl"
-            src={Image}
+            src={image1}
             alt=""
-          />
+          /><p className="absolute top:0 ml-2 mt-2 font-body text-black text-lg">Previous Job - ISO Certification Renewal as QMS assistant</p>
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <Fade bottom>
@@ -78,6 +78,8 @@ const About = () => {
               </div>
             </Fade>
           </div>
+
+          
         </div>
       </div>
     </section>

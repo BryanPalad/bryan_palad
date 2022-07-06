@@ -21,7 +21,7 @@ const Hero = () => {
   const style = {
     color: "white",
     marginTop: '-10px',
-    marginLeft: '10px',
+    marginLeft: '5px',
     transform: 'rotate(320deg)'
   };
 
@@ -72,7 +72,7 @@ const Hero = () => {
                         {text.split("").map((char, i) => {
                           const key = `${i}`;
                           return (
-                            <span key={key} className="text-accent">
+                            <span key={key} className="text-accent font-logo">
                               {char}
                             </span>
                           );

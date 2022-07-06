@@ -20,7 +20,7 @@ const style = {
   bgcolor: "background.paper",
   border: "2px solid #fffff",
   borderRadius: "5px",
-  // boxShadow: 24,
+  overflow: 'hidden',
   p: 4,
   "@media (max-width: 767px)": {
     width: 400,
@@ -28,6 +28,7 @@ const style = {
   },
   "@media (max-width: 467px)": {
     width: 300,
+    height: 610,
     marginTop: "15px",
   },
 };
@@ -70,14 +71,9 @@ const Project = ({ item }) => {
                 <Fade in={open}>
                   <Box sx={style}>
                     <div className="flex items-center">
-                      <Typography
-                        className="text-black mt-2"
-                        id="transition-modal-title"
-                        variant="h6"
-                        component="h1"
-                      >
+                      <h1 className="text-black mt-2 font-logo md:mb-2 text-center text-lg md:text-2xl lg:text-left">
                         Online Appointment System for Fernandez Dental Clinic
-                      </Typography>
+                      </h1>
                       <AiOutlineClose
                         onClick={handleClose}
                         className="text-black text-3xl cursor-pointer absolute top-2 right-2"
@@ -90,12 +86,17 @@ const Project = ({ item }) => {
                       <Slide duration={2000} transitionDuration={800}>
                         {modalObj[0].sliderImg.map((item, index) => {
                           return (
-                            <img src={item.slide} alt="portfolio" key={index} />
+                            <img
+                              className="mb-2"
+                              src={item.slide}
+                              alt="portfolio"
+                              key={index}
+                            />
                           );
                         })}
                       </Slide>
-                      <hr />
-                      <h1 className="text-black text-2xl font-logo mt-2">
+                      <hr className="mb-2" />
+                      <h1 className="text-black text-lg md:text-2xl font-logo mt-2">
                         Main Functions
                       </h1>
                       <h3>

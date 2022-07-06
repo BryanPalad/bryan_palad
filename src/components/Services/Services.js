@@ -12,12 +12,10 @@ const Services = () => {
         {/* SECTION TITLE */}
         <Fade bottom>
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title mt-10 before:content-services relative before:absolute before:opacity-40 before:-top-[2rem] before:-right-[70px] before:hidden before:lg:block">
-              What i can do for clients
+            <h2 className="section-title mt-10 before:content-services relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[160px] before:hidden before:lg:block">
+              What i can do
             </h2>
-            <p className="subtitle">
-              I will accept projects in the future...
-            </p>
+            <p className="subtitle">I will accept projects in the future...</p>
           </div>
         </Fade>
         {/* item grid */}

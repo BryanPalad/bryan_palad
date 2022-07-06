@@ -16,6 +16,8 @@ import { motion } from 'framer-motion';
 // import Link
 import {Link} from 'react-scroll';
 
+//import picture
+import profile from "../../assets/img/gradpic.jpg";
 
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +56,7 @@ const NavMobile = () => {
         </div>
 
         {/* circle */}
-        <motion.div variants={circleVariants} initial='hidden' animate={isOpen ? 'visible' : 'hidden'} className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0">
+        <motion.div variants={circleVariants} initial='hidden' animate={isOpen ? 'visible' : 'hidden'} className="w-4 h-4 rounded-full bg-black fixed top-0 right-0">
 
         </motion.div>
 
@@ -64,11 +66,12 @@ const NavMobile = () => {
             <div onClick={() => setIsOpen(false)} className='cursor-pointer absolute top-8 right-8'>
                 <XIcon className='w-8 h-8'/>
             </div>
+            <img src={profile} className='h-[150px] w-[150px] rounded-full mb-8 lg:hidden' alt=''/>
             {
                 navigation.map((item, index) => {
                     return (
                         <li key={index} className='mb-8'>
-                            <Link onClick={() => setIsOpen(false)} to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize'>{item.name}</Link>
+                            <Link onClick={() => setIsOpen(false)} to={item.href} smooth={true} duration={500} offset={-70} className='text-xl font-body cursor-pointer text-white capitalize hover:text-accent-hover'>{item.name}</Link>
                         </li>
                     )
                 })

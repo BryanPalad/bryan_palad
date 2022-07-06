@@ -35,7 +35,7 @@ const TestimonialSlider = () => {
           const { authorImg, authorText, authorName, authorPosition } = item;
           return <SwiperSlide key={index}>
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="w-48 h-48 lg:w-[328px] lg-h-[328px]">
+                <div className="w-48 h-48 lg:w-[328px] lg-h-[328px] flex">
                     <img className='rounded-2xl h-full w-full' src={authorImg} alt=''/>
                 </div>
                 <div className="flex flex-col max-w-3xl">

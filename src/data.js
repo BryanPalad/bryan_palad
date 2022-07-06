@@ -8,6 +8,8 @@ import {
   FiMapPin,
 } from "react-icons/fi";
 
+import {TbPhone} from 'react-icons/tb';
+
 // companies icons
 import FreelancerBrandIcon from "./assets/img/brands/freelancer.png";
 import UpworkBrandIcon from "./assets/img/brands/upwork.png";
@@ -22,6 +24,7 @@ import expenseTracker from "./assets/img/projects/expense.PNG";
 import weatherApp from "./assets/img/projects/Weather App.PNG";
 import cryptoverse from "./assets/img/projects/Cryptoverse.PNG";
 import collegeProject from "./assets/img/projects/FernandezDentalClinic.PNG";
+import myPortfolio from './assets/img/projects/My_Portfolio.PNG';
 
 // college project modal
 import slider1 from "../src/assets/img/projects/FernandezDentalClinic.PNG";
@@ -197,6 +200,16 @@ export const projectsData = [
   },
   {
     id: "6",
+    image: myPortfolio,
+    name: "My Portfolio",
+    category: "web development",
+    description: "React Js / Redux / Tailwindcss / Email Js",
+    pointer: false,
+    demo: "#",
+    github: "https://github.com/BryanPalad/bryan_palad",
+  },
+  {
+    id: "7",
     image: collegeProject,
     name: "Online Appointment System for Fernandez Dental Clinic",
     category: "college project",
@@ -242,16 +255,16 @@ export const collegeProjectModal = [
   {
     functionsList: [
       {
-        function: "* Email Verification at Registration for patients.",
+        function: "• Email Verification at Registration for patients.",
       },
       {
-        function: "* Book an Appointment based on dynamic available time and date created by the dentists.",
+        function: "• Book an Appointment based on dynamic available time and date created by the dentists.",
       },
       {
-        function: "* Automated SMS Notification for Approved(by doctor/s) and Upcoming Appointments(of patients).",
+        function: "• Automated SMS Notification for Approved(by doctor/s) and Upcoming Appointments(of patients).",
       },
       {
-        function: "* Data or images can be modified through systems backend (settings tab).",
+        function: "• Data or images can be modified through systems backend (settings tab).",
       }
       
     ],
@@ -355,7 +368,13 @@ export const contact = [
   {
     icon: <FiMapPin />,
     title: "Current Location",
-    subtitle: "Brgy. Banlic, Cabuyao Laguna 4025",
-    description: "",
+    subtitle: "My permanent address",
+    description: "Brgy. Banlic, Cabuyao Laguna 4025",
+  },
+  {
+    icon: <TbPhone />,
+    title: "Phone Number",
+    subtitle: "You can call / text me at",
+    description: "+63-945-560-2846 (Globe)",
   },
 ];
