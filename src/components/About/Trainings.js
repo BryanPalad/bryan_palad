@@ -1,26 +1,30 @@
 import React from "react";
 import "./about.css";
 import { FiCalendar } from "react-icons/fi";
-import { trainings } from "../../data";
+import { trainings, internship } from "../../data";
 
 const Trainings = () => {
   return (
     <div className="flex flex-col">
       <div className="timeline">
-        <div className="timeline-item">
+        {internship.map((item, index) => {
+          return (
+          <div className="timeline-item">
           <div className="circle-dot"></div>
           <h3 className="timeline-date flex flex-row gap-x-2 mb-2">
             <FiCalendar />{" "}
-            <span className="mt-[-3px]">Dec 2019 - March 2022</span>
+            <span className="mt-[-3px]">{item.date}</span>
           </h3>
           <h4 className="timeline-title mb-2 font-body text-md">
-            IT Desktop Support Intern (Teletech Sta.Rosa)
+            {item.title}
           </h4>
           <p className="timeline-text text-md text-justify">
-            Maintains, analyzes, troubleshoots, upgrades, replaces and repairs
-            computer systems hardware and computer peripherals.
+            {item.desc}
           </p>
         </div>
+        )
+        })}
+        
         {trainings.map((item, index) => {
           return (
             <div className="timeline-item" key={index}>

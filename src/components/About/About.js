@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { Fade } from "react-reveal";
 
 import { BsEmojiSmile } from "react-icons/bs";
-import { MdImportantDevices } from "react-icons/md";
+import { SiSemanticweb } from "react-icons/si";
 
 // import image1 from "../../assets/img/about/tspc.jpg";
 // mui tabs
@@ -107,7 +107,7 @@ const About = () => {
                   className="transition-all duration-300"
                 >
                   <button className="mt-5 btn btn-md bg-accent hover:bg-accent-hover transition-all gap-1.5">
-                    Projects <MdImportantDevices className="hidden lg:block" />
+                    Projects <SiSemanticweb className="hidden lg:block" />
                   </button>
                 </Link>
               </div>

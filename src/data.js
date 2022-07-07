@@ -110,10 +110,11 @@ export const social = [
 ];
 
 export const typing = [
-  " Self-Taught Web Developer",
+  " Front-End Web Developer",
   " Aspiring Software Engineer",
-  " BSIT Graduate",
   " Enthusiastic Dev",
+  " BSIT Graduate",
+  
 ];
 
 //experience 
@@ -128,6 +129,14 @@ export const experience = [
   }
 ];
 
+// internship
+export const internship = [
+  {
+    date: 'Dec 2019 - March 2022',
+    title: 'Desktop Support Intern (Teletech Sta.Rosa)',
+    desc: 'Maintains, analyzes, troubleshoots, upgrades, replaces and repairs computer systems hardware and computer peripherals.',
+  }
+]
 //trainings/certificates
 export const trainings = [
   {
@@ -148,7 +157,7 @@ export const trainings = [
     image: modernresolve,
     alt: 'modern resolve',
     title:'Modern Resolve',
-    style: 'w-[150px] mt-[10px] mr-0 mb-[-10px] ml-[-18px]',
+    style: 'w-[80px] mt-[10px] mr-0 mb-[10px] ml-[-10px]',
     cert1: 'COE_MDR.pdf',
     certName1: 'Modern Code Camp (Advanced Web Development)',
     cert2: '',
