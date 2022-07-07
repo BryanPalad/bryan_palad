@@ -2,7 +2,6 @@ import './App.css';
 // components 
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import Brands from './components/Brands';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -16,7 +15,6 @@ function App() {
     <div>
       <Header/>
       <Hero/>
-      {/* <Brands/> */}
       <About/>
       <Skills/>
       <Portfolio/>

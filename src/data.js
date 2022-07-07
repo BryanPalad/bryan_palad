@@ -8,14 +8,12 @@ import {
   FiMapPin,
 } from "react-icons/fi";
 
-import {TbPhone} from 'react-icons/tb';
+import { TbPhone } from "react-icons/tb";
 
-// companies icons
-import FreelancerBrandIcon from "./assets/img/brands/freelancer.png";
-import UpworkBrandIcon from "./assets/img/brands/upwork.png";
-import FiverBrandIcon from "./assets/img/brands/fiverr.png";
-import BehanceBrandIcon from "./assets/img/brands/behance.png";
-import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
+//training images 
+import simplilearn from './assets/img/trainings/simplilearn.png';
+import modernresolve from './assets/img/trainings/modernresolve.png';
+import greatLearning from './assets/img/trainings/greatLearning.png'
 
 // projects images
 import calculator from "./assets/img/projects/Calculator.PNG";
@@ -24,7 +22,7 @@ import expenseTracker from "./assets/img/projects/expense.PNG";
 import weatherApp from "./assets/img/projects/Weather App.PNG";
 import cryptoverse from "./assets/img/projects/Cryptoverse.PNG";
 import collegeProject from "./assets/img/projects/FernandezDentalClinic.PNG";
-import myPortfolio from './assets/img/projects/My_Portfolio.PNG';
+import myPortfolio from "./assets/img/projects/My_Portfolio.PNG";
 
 // college project modal
 import slider1 from "../src/assets/img/projects/FernandezDentalClinic.PNG";
@@ -117,29 +115,59 @@ export const typing = [
   " BSIT Graduate",
   " Enthusiastic Dev",
 ];
-// companies
-export const brands = [
+
+//experience 
+export const experience = [
   {
-    img: FreelancerBrandIcon,
-    href: "",
-  },
-  {
-    img: UpworkBrandIcon,
-    href: "",
-  },
-  {
-    img: FiverBrandIcon,
-    href: "",
-  },
-  {
-    img: BehanceBrandIcon,
-    href: "",
-  },
-  {
-    img: DribbbleBrandIcon,
-    href: "",
-  },
+    date: 'Oct.15 2019 - Jan. 15 2019',
+    designation: 'Admin Staff (Triple Star Packaging Corporation)',
+    subtitle: 'Quality Management System (QMS) Assistant',
+    desc1: 'supports the QMS head in all aspects of quality system operations. Internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements. Focus on meeting customer requirements on a consistent basis.',
+    subtitle2: 'Inventory Controller',
+    desc2: 'in charge of incoming and outgoing of raw materials through ERP system. Ensures that all stocks were monitored and all the delivery receipts were accurately checked before transmitting to accounting dept.'
+  }
 ];
+
+//trainings/certificates
+export const trainings = [
+  {
+    date: 'March - April 2022',
+    link: 'https://www.simplilearn.com/',
+    image: simplilearn,
+    alt: 'Simplilearn',
+    title:'Simplilearn',
+    style: 'w-[150px] my-[10px] mr-0 ml-[-5px]',
+    cert1: 'JavaScript.pdf',
+    certName1: 'Javascript Course',
+    cert2: 'ReactJs.pdf',
+    certName2: 'React Js Course',
+  },
+  {
+    date: 'May 2022',
+    link: '',
+    image: modernresolve,
+    alt: 'modern resolve',
+    title:'Modern Resolve',
+    style: 'w-[150px] mt-[10px] mr-0 mb-[-10px] ml-[-18px]',
+    cert1: 'COE_MDR.pdf',
+    certName1: 'Modern Code Camp (Advanced Web Development)',
+    cert2: '',
+    certName2: '',
+  },
+  {
+    date: 'June 2022',
+    link: 'https://www.mygreatlearning.com/',
+    image: greatLearning,
+    alt: 'Great Learning',
+    title:'Great Learning',
+    style: 'w-[150px] my-[10px] mr-0 ml-[-10px]',
+    cert1: 'PHP_Cert.pdf',
+    certName1: 'PHP Course',
+    cert2: 'Java_Cert.pdf',
+    certName2: 'Java Course',
+  },
+]
+
 
 // projects
 export const projectsData = [
@@ -148,7 +176,7 @@ export const projectsData = [
     image: calculator,
     name: "Calculator",
     category: "web development",
-    description: "React Js",
+    description: "React Js / CSS",
     clip: calculatorClip,
     pointer: false,
     demo: "https://reactjscalculator1.netlify.app/",
@@ -159,7 +187,7 @@ export const projectsData = [
     image: teslaClone,
     name: "Tesla Clone",
     category: "web development",
-    description: "React Js / Styled Components",
+    description: "React Js / Styled Components / CSS",
     clip: teslaCloneClip,
     pointer: false,
     demo: "https://teslacloneui.netlify.app/",
@@ -170,7 +198,7 @@ export const projectsData = [
     image: expenseTracker,
     name: "Expense Tracker",
     category: "web development",
-    description: "React Js / React Redux",
+    description: "React Js / React Redux / Material UI",
     clip: expenseTrackerClip,
     pointer: false,
     demo: "https://expensetrackermini.netlify.app/",
@@ -203,7 +231,7 @@ export const projectsData = [
     image: myPortfolio,
     name: "My Portfolio",
     category: "web development",
-    description: "React Js / Redux / Tailwindcss / Email Js",
+    description: "React Js / Tailwindcss / Email Js",
     pointer: false,
     demo: "#",
     github: "https://github.com/BryanPalad/bryan_palad",
@@ -238,17 +266,17 @@ export const collegeProjectModal = [
       {
         slide: slider1,
       },
-      { 
-        slide: slider2
+      {
+        slide: slider2,
       },
-      { 
-        slide: slider3 
+      {
+        slide: slider3,
       },
-      { 
-        slide: slider4 
+      {
+        slide: slider4,
       },
-      { 
-        slide: slider5 
+      {
+        slide: slider5,
       },
     ],
   },
@@ -258,15 +286,17 @@ export const collegeProjectModal = [
         function: "• Email Verification at Registration for patients.",
       },
       {
-        function: "• Book an Appointment based on dynamic available time and date created by the dentists.",
+        function:
+          "• Book an Appointment based on dynamic available time and date created by the dentists.",
       },
       {
-        function: "• Automated SMS Notification for Approved(by doctor/s) and Upcoming Appointments(of patients).",
+        function:
+          "• Automated SMS Notification for Approved(by doctor/s) and Upcoming Appointments(of patients).",
       },
       {
-        function: "• Data or images can be modified through systems backend (settings tab).",
-      }
-      
+        function:
+          "• Data or images can be modified through systems backend (settings tab).",
+      },
     ],
   },
 ];
@@ -368,13 +398,13 @@ export const contact = [
   {
     icon: <FiMapPin />,
     title: "Current Location",
-    subtitle: "My permanent address",
+    subtitle: "My permanent address...",
     description: "Brgy. Banlic, Cabuyao Laguna 4025",
   },
   {
     icon: <TbPhone />,
     title: "Phone Number",
-    subtitle: "You can call / text me at",
+    subtitle: "You can call / text me at...",
     description: "+63-945-560-2846 (Globe)",
   },
 ];

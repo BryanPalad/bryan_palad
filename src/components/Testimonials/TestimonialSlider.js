@@ -4,7 +4,7 @@ import React from "react";
 import { testimonials } from '../../data';
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide} from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import '../../swiper.css';
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 
 const TestimonialSlider = () => {
   return (
@@ -22,13 +22,12 @@ const TestimonialSlider = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 1500,
+          delay: 6000,
           disableOnInteraction: false,
         }}
-        modules={{
-          Autoplay,
-          Pagination,
-        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        loop={true}
         className="mySwiper"
       >
         {testimonials.map((item, index) => {
@@ -40,7 +39,7 @@ const TestimonialSlider = () => {
                 </div>
                 <div className="flex flex-col max-w-3xl">
                     <h5 className="font-body text-2xl mb-8 italic font-normal">{authorText}</h5>
-                    <div>
+                    <div className="mb-10">
                         <p className="text-lg text-accent">{authorName}</p>
                         <p>{authorPosition}</p>
                     </div>

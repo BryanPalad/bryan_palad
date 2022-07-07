@@ -1,12 +1,62 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { Fade } from "react-reveal";
-// import image
-import image1 from '../../assets/img/about/tspc.jpg'
+
 import { BsEmojiSmile } from "react-icons/bs";
 import { MdImportantDevices } from "react-icons/md";
 
+// import image1 from "../../assets/img/about/tspc.jpg";
+// mui tabs
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+//
+import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+import Trainings from "./Trainings";
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
+  };
+}
+
 const About = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   const date = new Date();
   const year = date.getFullYear();
   const birthYear = 1999;
@@ -14,13 +64,8 @@ const About = () => {
 
   return (
     <section id="about" className="section bg-secondary">
-      <div className="container mx-auto mt-5">
-        <div className="flex flex-col xl:flex-row gap-24">
-          <img
-            className="object-cover h-full w-[566px] md:mx-auto  lg:mx-0 rounded-2xl"
-            src={image1}
-            alt=""
-          /><p className="absolute top:0 ml-2 mt-2 font-body text-black text-lg">Previous Job - ISO Certification Renewal as QMS assistant</p>
+      <div className="container mx-auto mt-2 flex lg:flex-row flex-col">
+        <div className="flex flex-col xl:flex-row gap-24 lg:w-2/3">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <Fade bottom>
@@ -33,18 +78,8 @@ const About = () => {
                   <span> Aspiring FullStack Developer</span>
                 </p>
               </Fade>
-              <hr className="mb-8 opacity-5" />
-              <p className="mb-2 text-justify">
-                {age} years old, BS Information Technology graduate year 2019,
-                became a lead programmer on our 2 thesis projects and had an
-                experience using C#, MySQL and PHP despite not having enough
-                resources such as stable internet connection for self learning.
-                Landed my first job in a non-tech company where i spent almost 2
-                years and 3 months as an Admin Staff. I suddenly thought to
-                myself, it's about time to get back to coding and i've decided
-                to leave my current job, move forward and pursue this
-                programming career.
-              </p>
+              <hr className="mb-6 opacity-5" />
+              <AboutMe age={age} />
             </div>
             <Fade bottom>
               <div className="flex gap-3 lg:flex-row">
@@ -78,9 +113,25 @@ const About = () => {
               </div>
             </Fade>
           </div>
-
-          
         </div>
+
+        <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
+         <Box sx={{ width: '100%' }}>
+              <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
+                <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'white'}}} centered>
+                  <Tab label={<span className="text-white">Experience</span>} {...a11yProps(0)} />
+                  <Tab label={<span className="text-white">Trainings / Certs</span>} {...a11yProps(1)} />
+                </Tabs>
+              </Box>
+              <TabPanel value={value} index={0}>
+                <Experience/>
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                <Trainings />
+              </TabPanel>
+            </Box>
+        </div>
+
       </div>
     </section>
   );

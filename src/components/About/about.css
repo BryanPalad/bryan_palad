@@ -1,0 +1,36 @@
+.timeline {
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.timeline .timeline-item
+{
+    position: relative;
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+.timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: #02b1c2;
+}
+.timeline .circle-dot
+{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #02b1c2;
+}
