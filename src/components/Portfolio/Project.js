@@ -96,14 +96,14 @@ const Project = ({ item }) => {
                         })}
                       </Slide>
                       <hr className="mb-2" />
-                      <h1 className="text-black text-lg md:text-2xl font-logo mt-2">
+                      <h1 className="text-black dark:text-white text-lg md:text-2xl font-logo mt-2">
                         Main Functions
                       </h1>
                       <h3>
                         {modalObj[1].functionsList.map((item, index) => {
                           return (
                             <p
-                              className="text-black font-logo text-md md:text-lg"
+                              className="text-black dark:text-white font-logo text-md md:text-lg"
                               key={index}
                             >
                               {item.function}
@@ -117,12 +117,12 @@ const Project = ({ item }) => {
               </Modal>
               <p
                 onClick={handleOpen}
-                className="flex justify-center text-lg text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent"
+                className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent"
               >
                 View Details <RiSearchEyeLine />
               </p>
               <a href={item.github} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
                   Github <FiGithub />
                 </p>
               </a>
@@ -130,12 +130,12 @@ const Project = ({ item }) => {
           ) : (
             <>
               <a href={item.demo} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
                   Live Demo <FiExternalLink />
                 </p>
               </a>
               <a href={item.github} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
                   Github <FiGithub />
                 </p>
               </a>
@@ -145,7 +145,7 @@ const Project = ({ item }) => {
         <p className="capitalize text-accent text-sm mb-3">
           {item.description}
         </p>
-        <h3 className="text-2xl font-semibold capitalize mb-3">{item.name}</h3>
+        <h3 className="text-2xl font-semibold capitalize mb-3 text-black dark:text-white">{item.name}</h3>
       </div>
     </>
   );

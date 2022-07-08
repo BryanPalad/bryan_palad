@@ -21,15 +21,15 @@ const Contact = ({
 
   
   return (
-    <section id="contact" className="section bg-primary">
+    <section id="contact" className="section bg-primaryWhite dark:bg-primary">
       <div className="container mx-auto">
         {/* section title */}
         <Fade bottom>
         <div className="flex flex-col items-center text-center">
-          <h2 className="section-title before:content-contact relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
+          <h2 className="section-title text-black dark:text-white dark:before:content-contact before:content-contact2 relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
             Contact Me
           </h2>
-          <p className="subtitle">
+          <p className="subtitle text-black dark:text-white">
            You can directly connect me from here, Just fill up the information below, I am very responsive to messages...
           </p>
         </div>
@@ -45,8 +45,8 @@ const Contact = ({
                     {icon}
                   </div>
                   <div>
-                    <h4 className="font-body text-xl mb-1">{title}</h4>
-                    <p className="mb-1">{subtitle}</p>
+                    <h4 className="font-body text-xl mb-1 text-black dark:text-white">{title}</h4>
+                    <p className="mb-1 text-black dark:text-white">{subtitle}</p>
                     <p className="text-accent font-normal">{description}</p>
                   </div>
                 </div>

@@ -3,12 +3,13 @@ import ReactTypingEffect from "react-typing-effect";
 import CV from "../../assets/files/Bryan_Palad_CV.pdf";
 import profile from "../../assets/img/gradpic.jpg";
 // import profile2 from "../../assets/img/my_pic.png";
-import downArrow from "../../assets/img/down-arrow.svg";
 import Lottie from "react-lottie";
 import * as programming from "../../assets/clips/waving.json";
 import Fade from "react-reveal/Fade";
+import { CgChevronDown } from "react-icons/cg";
 import { typing } from "../../data";
 import { Link } from "react-scroll";
+
 const Hero = () => {
   const [arrow, setArrow] = useState(false);
 
@@ -20,9 +21,9 @@ const Hero = () => {
 
   const style = {
     color: "white",
-    marginTop: '-10px',
-    marginLeft: '5px',
-    transform: 'rotate(320deg)'
+    marginTop: "-10px",
+    marginLeft: "5px",
+    transform: "rotate(320deg)",
   };
 
   const loadingAnimation = {
@@ -37,27 +38,26 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
+      className="h-[100vh] flex items-center bg-primaryWhite dark:bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
       <div className="container mx-auto h-full flex flex-col justify-center">
         <div className="flex items-center h-full pt-8">
           {/* left-side */}
           <Fade left>
             <div className="flex-1 flex flex-col items-center lg:items-start">
-
               <p className="text-xl flex text-accent text-md mb-[22px]">
                 Hi there, I'm Bryan{" "}
-                  <Lottie
-                    options={loadingAnimation}
-                    style={style}
-                    height={40}
-                    width={40}
-                  />
+                <Lottie
+                  options={loadingAnimation}
+                  style={style}
+                  height={40}
+                  width={40}
+                />
               </p>
-              <h1 className="text-3xl text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
+              <h1 className="text-3xl text-black dark:text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
                 I Build & Design <br /> Web Interfaces.
               </h1>
-              <p className="pt-4 pb-8 text-lg text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
+              <p className="pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
                 I'm a <span className="-ml-2">&nbsp;</span>
                 <ReactTypingEffect
                   text={typing}
@@ -108,12 +108,10 @@ const Hero = () => {
             offset={-70}
             className="transition-all duration-300"
           >
-            <img
+            <CgChevronDown
               className={`${
                 arrow ? "opacity-0" : ""
-              } mb-2 h-14 l-14 cursor-pointer animate-bounce transition delay-300`}
-              src={downArrow}
-              alt="down-arrow"
+              } mb-2 h-14 w-20 text-black dark:text-white cursor-pointer animate-bounce transition delay-300`}
             />
           </Link>
         </div>

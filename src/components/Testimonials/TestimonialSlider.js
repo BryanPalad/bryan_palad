@@ -38,10 +38,10 @@ const TestimonialSlider = () => {
                     <img className='rounded-2xl h-full w-full' src={authorImg} alt=''/>
                 </div>
                 <div className="flex flex-col max-w-3xl">
-                    <h5 className="font-body text-2xl mb-8 italic font-normal">{authorText}</h5>
+                    <h5 className="font-body text-2xl mb-8 italic font-normal text-black dark:text-white">{authorText}</h5>
                     <div className="mb-10">
                         <p className="text-lg text-accent">{authorName}</p>
-                        <p>{authorPosition}</p>
+                        <p className="text-black dark:text-white">{authorPosition}</p>
                     </div>
                 </div>
             </div>

@@ -63,13 +63,13 @@ const About = () => {
   const age = year - birthYear;
 
   return (
-    <section id="about" className="section bg-secondary">
+    <section id="about" className="section bg-secondaryWhite dark:bg-secondary">
       <div className="container mx-auto mt-2 flex lg:flex-row flex-col">
         <div className="flex flex-col xl:flex-row gap-24 lg:w-2/3">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <Fade bottom>
-                <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
+                <h2 className="text-3xl lg:text-4xl text-black dark:text-white font-medium lg:font-extrabold mb-3 before:content-about2 dark:before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
                   About Me
                 </h2>
                 <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center md:flex-row lg:justify-start">
@@ -118,9 +118,9 @@ const About = () => {
         <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
          <Box sx={{ width: '100%' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-                <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'white'}}} centered>
-                  <Tab label={<span className="text-white">Experience</span>} {...a11yProps(0)} />
-                  <Tab label={<span className="text-white">Trainings / Certs</span>} {...a11yProps(1)} />
+                <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'#02b1c2'}}} centered>
+                  <Tab label={<span className="text-black dark:text-white">Experience</span>} {...a11yProps(0)} />
+                  <Tab label={<span className="text-black dark:text-white">Trainings / Certs</span>} {...a11yProps(1)} />
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>

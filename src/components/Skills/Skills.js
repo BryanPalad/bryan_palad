@@ -4,10 +4,10 @@ import { skills } from "../../data";
 import { Fade } from "react-reveal";
 const Skills = () => {
   return (
-    <section className="bg-tertiary py-12">
+    <section className="bg-tertiaryWhite dark:bg-tertiary  py-12">
       <div className="mx-auto px-1">
         <Fade left>
-        <h2 className="text-3xl text-center font-medium mt-[-10px] mb-10 md:hidden">
+        <h2 className="text-3xl text-center text-black dark:text-white font-medium mt-[-10px] mb-10 md:hidden">
                  Technical Skills
         </h2>
         <div className="grid flex flex-col grid-cols-2 md:grid-flow-row md:grid-cols-6 lg:grid-cols-12 gap-y-5">

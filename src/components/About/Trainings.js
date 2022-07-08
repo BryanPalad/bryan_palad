@@ -11,14 +11,14 @@ const Trainings = () => {
           return (
           <div className="timeline-item">
           <div className="circle-dot"></div>
-          <h3 className="timeline-date flex flex-row gap-x-2 mb-2">
+          <h3 className="timeline-date flex text-black dark:text-white flex-row gap-x-2 mb-2">
             <FiCalendar />{" "}
-            <span className="mt-[-3px]">{item.date}</span>
+            <span className="mt-[-3px] text-black dark:text-white font-body">{item.date}</span>
           </h3>
-          <h4 className="timeline-title mb-2 font-body text-md">
+          <h4 className="timeline-title mb-2 font-body text-md text-black dark:text-white">
             {item.title}
           </h4>
-          <p className="timeline-text text-md text-justify">
+          <p className="timeline-text text-md text-justify text-black dark:text-white">
             {item.desc}
           </p>
         </div>
@@ -29,9 +29,10 @@ const Trainings = () => {
           return (
             <div className="timeline-item" key={index}>
               <div className="circle-dot"></div>
-              <h3 className="timeline-date">
-                <i className="fa fa-calendar"></i> {item.date}
-              </h3>
+              <h3 className="timeline-date flex text-black dark:text-white flex-row gap-x-2 mb-2">
+            <FiCalendar />{" "}
+            <span className="mt-[-3px] text-black dark:text-white font-body">{item.date}</span>
+          </h3>
               <h4 className="timeline-title">
                 <a href={item.link} target="_blank" rel="noreferrer">
                   <img
@@ -43,7 +44,7 @@ const Trainings = () => {
                 </a>
               </h4>
               <p className="timeline-text">
-                <div className="simplilearn text-white">
+                <div className="simplilearn text-black dark:text-white ">
                   <a href={item.cert1} target="_blank" rel="noreferrer">
                     {item.certName1}
                   </a>

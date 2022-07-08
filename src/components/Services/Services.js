@@ -7,15 +7,15 @@ import { services } from "../../data";
 
 const Services = () => {
   return (
-    <section id="services" className="section bg-tertiary">
+    <section id="services" className="section bg-tertiaryWhite dark:bg-tertiary">
       <div className="container mx-auto">
         {/* SECTION TITLE */}
         <Fade bottom>
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title mt-10 before:content-services relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[160px] before:hidden before:lg:block">
+            <h2 className="section-title mt-10 text-black dark:text-white dark:before:content-services before:content-services2 relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[160px] before:hidden before:lg:block">
               What i can do
             </h2>
-            <p className="subtitle">I will accept projects in the future...</p>
+            <p className="subtitle text-black dark:text-white">I will accept projects in the future...</p>
           </div>
         </Fade>
         {/* item grid */}
@@ -24,7 +24,7 @@ const Services = () => {
             const { name, description, img } = service;
             return (
               <div
-                className="bg-secondary p-6 rounded-2xl hover:translate-y-3 duration-300 cursor-pointer"
+                className="dark:bg-secondary bg-secondaryWhite p-6 rounded-2xl hover:translate-y-3 duration-300 cursor-pointer"
                 key={index}
               >
                 <Link
@@ -37,8 +37,8 @@ const Services = () => {
                   className="transition-all duration-300"
                 >
                   <img className="mb-4" src={img} alt="services-img" />
-                  <h4 className="text-xl font-medium mb-2">{name}</h4>
-                  <p className="text-justify">{description}</p>
+                  <h4 className="text-xl font-medium mb-2 dark:text-white text-black">{name}</h4>
+                  <p className="text-justify dark:text-white text-black">{description}</p>
                 </Link>
               </div>
             );

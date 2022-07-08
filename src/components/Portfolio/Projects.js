@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <div>
     <nav className='mb-12 max-w-xl mx-auto'>
-      <ul className='flex flex-col md:flex-row justify-evenly items-center text-white'>
+      <ul className='flex flex-col md:flex-row justify-evenly items-center text-black dark:text-white'>
         {projectsNav.map((item, index) => {
           return (
             <li onClick={(e) => {

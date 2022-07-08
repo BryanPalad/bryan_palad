@@ -120,7 +120,7 @@ export const typing = [
 //experience 
 export const experience = [
   {
-    date: 'Oct.15 2019 - Jan. 15 2019',
+    date: 'Oct.15 2019 - Jan. 15 2022',
     designation: 'Admin Staff (Triple Star Packaging Corporation)',
     subtitle: 'Quality Management System (QMS) Assistant',
     desc1: 'supports the QMS head in all aspects of quality system operations. Internal auditing and daily maintenance/review of the quality system processes to ensure compliance and improvements. Focus on meeting customer requirements on a consistent basis.',
@@ -132,7 +132,7 @@ export const experience = [
 // internship
 export const internship = [
   {
-    date: 'Dec 2019 - March 2022',
+    date: 'Dec 2019 - March 2019',
     title: 'Desktop Support Intern (Teletech Sta.Rosa)',
     desc: 'Maintains, analyzes, troubleshoots, upgrades, replaces and repairs computer systems hardware and computer peripherals.',
   }
