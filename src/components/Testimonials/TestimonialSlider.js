@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
         {testimonials.map((item, index) => {
           const { authorImg, authorText, authorName, authorPosition } = item;
           return <SwiperSlide key={index}>
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-32 justify-center items-center text-center">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-32 justify-center items-center text-center lg:justify-start lg:items-start lg:text-left">
                 <div className="w-48 h-48 lg:w-[328px] lg-h-[328px] flex">
                     <img className='rounded-2xl h-full w-full' src={authorImg} alt=''/>
                 </div>
