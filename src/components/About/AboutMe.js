@@ -11,8 +11,8 @@ const AboutMe = ({ age }) => {
         <br />
         <br />
         Landed my first job in a non-tech company where i spent almost 2 years
-        and 3 months as an Admin Staff (QMS Assistant and Inventory Controller). I learned so much about packaging company. But suddenly there was a
-        feeling that working in this company was not challenging anymore , and i
+        and 3 months as an Admin Staff (QMS Assistant and Inventory Controller). I learned so much about my role. But suddenly there was a
+        feeling that it's not challenging anymore , and i
         think it's about time to get back to coding then i've decided to leave
         my current job, refresh my knowledge and pursue this programming career.
       </p>

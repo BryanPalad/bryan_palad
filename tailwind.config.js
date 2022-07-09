@@ -42,7 +42,7 @@ module.exports = {
         tertiaryWhite: '#f5f8fa',
         error: '#bd321c', //red
         accent: {
-          DEFAULT: '#02b1c2', //skyblue
+          DEFAULT: '#42cef5', //skyblue
           hover: '#3ae2f2', //lightskyblue
         },
         paragraph: '#878e99',
@@ -51,3 +51,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// DEFAULT: '#02b1c2', //skyblue

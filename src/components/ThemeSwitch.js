@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -43,9 +42,7 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 16 / 2,
     opacity: 1,
     backgroundColor:
-      theme.palette.mode === "dark"
-        ? "rgba(255,255,255,.35)"
-        : "gray",
+      theme.palette.mode === "dark" ? "rgba(255,255,255,.35)" : "gray",
     boxSizing: "border-box",
   },
 }));
@@ -67,11 +64,7 @@ const ThemeSwitch = ({ mobile }) => {
       {mobileTheme ? (
         <>
           <FormGroup className="mb-10">
-            <Stack
-              direction="row"
-              spacing={1}
-              alignItems="center"
-            >
+            <Stack direction="row" spacing={1} alignItems="center">
               <Typography>Dark Mode</Typography>
               <AntSwitch
                 defaultChecked
