@@ -44,12 +44,10 @@ const style = {
   "@media (max-width: 767px)": {
     width: 400,
     maxHeight: 610,
-    marginTop: "15px",
   },
   "@media (max-width: 467px)": {
     width: 300,
     height: 610,
-    marginTop: "15px",
   },
 };
 
