@@ -1,15 +1,13 @@
-
 import React from 'react'
 
 // import navigation data
-import {navigation} from '../../data';
-
+import {navigation} from '../../constants/Header';
 //import link
 import {Link} from 'react-scroll';
+//import for dark mode / light mode
 import ThemeSwitch from '../ThemeSwitch';
 
 const Nav = () => {
-
   return (
     <nav>
       <ul className='flex space-x-6 capitalize text-[17px] items-center'>

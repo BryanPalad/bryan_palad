@@ -1,14 +1,27 @@
 import React, { useState } from "react";
+//import icons
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiSearchEyeLine } from "react-icons/ri";
+// import for modal
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
+// import for skills chip
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+// import for image sliders
 import { Slide } from "react-slideshow-image";
-import { collegeProjectModal as modalObj } from "../../data";
+// import college project modal
+import { collegeProjectModal as modalObj } from "../../constants/Portfolio";
+// import for drop down tab // accordion
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import for react-slideshow
 import "react-slideshow-image/dist/styles.css";
 
 const style = {
@@ -17,13 +30,20 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 670,
+  maxHeight: 900,
   bgcolor: "background.paper",
   border: "2px solid #fffff",
   borderRadius: "5px",
-  overflow: 'hidden',
+  overflow: "scroll",
+  display: "block",
   p: 4,
+  "@media (max-width: 1367px)": {
+    width: 400,
+    maxHeight: 680,
+  },
   "@media (max-width: 767px)": {
     width: 400,
+    maxHeight: 610,
     marginTop: "15px",
   },
   "@media (max-width: 467px)": {
@@ -70,8 +90,8 @@ const Project = ({ item }) => {
               >
                 <Fade in={open}>
                   <Box sx={style}>
-                    <div className="flex items-center">
-                      <h1 className="text-black mt-2 font-logo md:mb-2 text-center text-lg md:text-2xl lg:text-left">
+                    <div className="flex justify-center items-center">
+                      <h1 className="text-black mt-2 font-logo items-center md:mb-2 text-center text-2xl md:text-2xl lg:text-center">
                         Online Appointment System for Fernandez Dental Clinic
                       </h1>
                       <AiOutlineClose
@@ -96,21 +116,65 @@ const Project = ({ item }) => {
                         })}
                       </Slide>
                       <hr className="mb-2" />
-                      <h1 className="text-black dark:text-white text-lg md:text-2xl font-logo mt-2">
+                      <h1 className="text-black text-2xl md:text-2xl font-logo mt-2 text-center mb-2">
                         Main Functions
                       </h1>
-                      <h3>
-                        {modalObj[1].functionsList.map((item, index) => {
-                          return (
-                            <p
-                              className="text-black dark:text-white font-logo text-md md:text-lg"
-                              key={index}
-                            >
-                              {item.function}
-                            </p>
-                          );
-                        })}
-                      </h3>
+                      <Accordion>
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography className="text-md">
+                            What Patients can do?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            <h3>
+                              {modalObj[1].patientsFunction.map(
+                                (item, index) => {
+                                  return (
+                                    <p
+                                      className="text-black font-logo text-md md:text-lg"
+                                      key={index}
+                                    >
+                                      {item.function}
+                                    </p>
+                                  );
+                                }
+                              )}
+                            </h3>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                      <Accordion>
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel2a-content"
+                          id="panel2a-header"
+                        >
+                          <Typography>What Dentists can do?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            <h3>
+                              {modalObj[2].dentistsFunction.map(
+                                (item, index) => {
+                                  return (
+                                    <p
+                                      className="text-black font-logo text-md md:text-lg"
+                                      key={index}
+                                    >
+                                      {item.function}
+                                    </p>
+                                  );
+                                }
+                              )}
+                            </h3>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
                     </Typography>
                   </Box>
                 </Fade>
@@ -142,10 +206,26 @@ const Project = ({ item }) => {
             </>
           )}
         </div>
+        <Stack direction="row" spacing={0.5}>
+          {item.description.map((desc, index) => {
+            return (
+              <div key={index}>
+                <Chip
+                  label={desc}
+                  style={{ color: "#42cef5", fontWeight: 400 }}
+                  variant="outlined"
+                />
+              </div>
+            );
+          })}
+        </Stack>
+
         <p className="capitalize text-accent text-sm mb-3">
-          {item.description}
+          {/* {item.description} */}
         </p>
-        <h3 className="text-2xl font-semibold capitalize mb-3 text-black dark:text-white">{item.name}</h3>
+        <h3 className="text-2xl font-semibold capitalize mb-3 text-black dark:text-white">
+          {item.name}
+        </h3>
       </div>
     </>
   );

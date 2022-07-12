@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from "react";
+// import typing effect
 import ReactTypingEffect from "react-typing-effect";
+// import downloadble resume
 import CV from "../../assets/files/Bryan_Palad_CV.pdf";
+// import profile image
 import profile from "../../assets/img/gradpic.jpg";
-// import profile2 from "../../assets/img/my_pic.png";
+// import for lottie, gif files
 import Lottie from "react-lottie";
+// import waving hand
 import * as programming from "../../assets/clips/waving.json";
+// import fade effect
 import Fade from "react-reveal/Fade";
+//import down icon
 import { CgChevronDown } from "react-icons/cg";
-import { typing } from "../../data";
+// import typing effect data
+import { typing } from "../../constants/Hero";
+// import smooth scrolling
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -45,8 +53,8 @@ const Hero = () => {
           {/* left-side */}
           <Fade left>
             <div className="flex-1 flex flex-col items-center lg:items-start">
-              <p className="text-xl flex text-accent text-md mb-[22px]">
-                Hi there, I'm Bryan{" "}
+              <p className="flex text-xl text-black dark:text-white mb-[22px] lg:text-3xl">
+                Hello, I'm Bryan{" "}
                 <Lottie
                   options={loadingAnimation}
                   style={style}

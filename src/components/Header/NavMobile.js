@@ -1,28 +1,22 @@
 import React, { useState } from "react";
-
 //import navigation data
-import { navigation } from "../../data";
-
+import { navigation } from "../../constants/Header";
 //import icons
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
-
 //import components
 import Socials from "./Socials";
-
 // import framer motion
 import { motion } from "framer-motion";
-
 // import Link
 import { Link } from "react-scroll";
-
 //import picture
 import profile from "../../assets/img/gradpic.jpg";
+// import darkk mode or light mode
 import ThemeSwitch from "../ThemeSwitch";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   // framer motion variants
   const circleVariants = {
     hidden: {
@@ -83,11 +77,13 @@ const NavMobile = () => {
         >
           <XIcon className="w-8 h-8" />
         </div>
+        {/* profile image */}
         <img
           src={profile}
           className="h-[150px] w-[150px] rounded-full mb-8 lg:hidden"
           alt=""
         />
+        {/* mapping navigation data */}
         {navigation.map((item, index) => {
           return (
             <li key={index} className="mb-8">

@@ -1,11 +1,10 @@
 import React from "react";
+// import fade effect
 import { Fade } from "react-reveal";
-
+// import spinner
 import { ClipLoader } from "react-spinners";
-
 // import contact data
-import { contact } from "../../data";
-
+import { contact } from "../../constants/Contact";
 
 const Contact = ({
   form,
@@ -18,21 +17,20 @@ const Contact = ({
   audioPlayer,
   NotificationSound,
 }) => {
-
-  
   return (
     <section id="contact" className="section bg-primaryWhite dark:bg-primary">
       <div className="container mx-auto">
         {/* section title */}
         <Fade bottom>
-        <div className="flex flex-col items-center text-center">
-          <h2 className="section-title text-black dark:text-white dark:before:content-contact before:content-contact2 relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
-            Contact Me
-          </h2>
-          <p className="subtitle text-black dark:text-white">
-           You can directly connect me from here, Just fill up the information below, I am very responsive to messages...
-          </p>
-        </div>
+          <div className="flex flex-col items-center text-center">
+            <h2 className="section-title text-black dark:text-white dark:before:content-contact before:content-contact2 relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
+              Contact Me
+            </h2>
+            <p className="subtitle text-black dark:text-white">
+              You can directly connect me from here, Just fill up the
+              information below, I am very responsive to messages...
+            </p>
+          </div>
         </Fade>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">
           {/* INFO */}
@@ -45,8 +43,12 @@ const Contact = ({
                     {icon}
                   </div>
                   <div>
-                    <h4 className="font-body text-xl mb-1 text-black dark:text-white">{title}</h4>
-                    <p className="mb-1 text-black dark:text-white">{subtitle}</p>
+                    <h4 className="font-body text-xl mb-1 text-black dark:text-white">
+                      {title}
+                    </h4>
+                    <p className="mb-1 text-black dark:text-white">
+                      {subtitle}
+                    </p>
                     <p className="text-accent font-normal">{description}</p>
                   </div>
                 </div>
@@ -61,26 +63,26 @@ const Contact = ({
           >
             <div className="flex flex-col gap-6 lg:flex-row w-full lg:gap-8">
               <div className="w-full">
-              <input
-                className="input"
-                name="fullname"
-                type="text"
-                value={formValues.fullname}
-                onChange={handleChange}
-                placeholder="Your Full Name"
-              />
-              <p className="errorTextInput"> {formErrors.fullname}</p>
+                <input
+                  className="input"
+                  name="fullname"
+                  type="text"
+                  value={formValues.fullname}
+                  onChange={handleChange}
+                  placeholder="Your Full Name"
+                />
+                <p className="errorTextInput"> {formErrors.fullname}</p>
               </div>
               <div className="w-full">
-              <input
-                className="input"
-                name="email"
-                type="email"
-                value={formValues.email}
-                onChange={handleChange}
-                placeholder="Your Email"
-              />
-              <p className="errorTextInput"> {formErrors.email}</p>
+                <input
+                  className="input"
+                  name="email"
+                  type="email"
+                  value={formValues.email}
+                  onChange={handleChange}
+                  placeholder="Your Email"
+                />
+                <p className="errorTextInput"> {formErrors.email}</p>
               </div>
             </div>
             <input

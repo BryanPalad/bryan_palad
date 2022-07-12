@@ -1,7 +1,6 @@
 import React from 'react'
-
 // import social data
-import {social} from '../../data';
+import {social} from '../../constants/Header';
 
 const Socials = () => {
   return (

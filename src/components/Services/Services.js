@@ -1,13 +1,17 @@
 import React from "react";
+//import fade effect
 import { Fade } from "react-reveal";
+// import smooth scroll
 import { Link } from "react-scroll";
-
 //import services data
-import { services } from "../../data";
+import { services } from "../../constants/Services";
 
 const Services = () => {
   return (
-    <section id="services" className="section bg-tertiaryWhite dark:bg-tertiary">
+    <section
+      id="services"
+      className="section bg-tertiaryWhite dark:bg-tertiary"
+    >
       <div className="container mx-auto">
         {/* SECTION TITLE */}
         <Fade bottom>
@@ -15,7 +19,9 @@ const Services = () => {
             <h2 className="section-title mt-10 text-black dark:text-white dark:before:content-services before:content-services2 relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[160px] before:hidden before:lg:block">
               What i can do
             </h2>
-            <p className="subtitle text-black dark:text-white">I will accept projects in the future...</p>
+            <p className="subtitle text-black dark:text-white">
+              I will accept projects in the future...
+            </p>
           </div>
         </Fade>
         {/* item grid */}
@@ -37,8 +43,12 @@ const Services = () => {
                   className="transition-all duration-300"
                 >
                   <img className="mb-4" src={img} alt="services-img" />
-                  <h4 className="text-xl font-medium mb-2 dark:text-white text-black">{name}</h4>
-                  <p className="text-justify dark:text-white text-black">{description}</p>
+                  <h4 className="text-xl font-medium mb-2 dark:text-white text-black">
+                    {name}
+                  </h4>
+                  <p className="text-justify dark:text-white text-black">
+                    {description}
+                  </p>
                 </Link>
               </div>
             );

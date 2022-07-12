@@ -26,25 +26,25 @@ const ContactEmail = () => {
     },
   });
 
-  // useEffect(() => {
-  //   window.addEventListener("beforeunload", alertUser);
-  //   window.addEventListener("unload", handleTabClosing);
-  //   return () => {
-  //     window.removeEventListener("beforeunload", alertUser);
-  //     window.removeEventListener("unload", handleTabClosing);
-  //   };
-  // });
+  useEffect(() => {
+    window.addEventListener("beforeunload", alertUser);
+    window.addEventListener("unload", handleTabClosing);
+    return () => {
+      window.removeEventListener("beforeunload", alertUser);
+      window.removeEventListener("unload", handleTabClosing);
+    };
+  });
 
-  // const handleTabClosing = () => {
-  //   window.close();
-  // };
+  const handleTabClosing = () => {
+    window.close();
+  };
 
-  // const alertUser = (event) => {
-  //   if (initialValues !== undefined) {
-  //     event.preventDefault();
-  //     event.returnValue = "";
-  //   }
-  // };
+  const alertUser = (event) => {
+    if (initialValues !== undefined) {
+      event.preventDefault();
+      event.returnValue = "";
+    }
+  };
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit ? sendEmail() : "") {
@@ -69,7 +69,8 @@ const ContactEmail = () => {
     setLoading(true);
     setIng("ing");
 
-    emailjs.sendForm(
+    emailjs
+      .sendForm(
         "service_r3c2acf",
         "gmail_template",
         form.current,

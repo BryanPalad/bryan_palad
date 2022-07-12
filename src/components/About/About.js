@@ -1,18 +1,18 @@
 import React from "react";
+// import smooth scrolling
 import { Link } from "react-scroll";
+// import fade effect
 import { Fade } from "react-reveal";
-
+// import icons
 import { BsEmojiSmile } from "react-icons/bs";
 import { SiSemanticweb } from "react-icons/si";
-
-// import image1 from "../../assets/img/about/tspc.jpg";
 // mui tabs
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-//
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+// import components
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Trainings from "./Trainings";
@@ -46,7 +46,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    "aria-controls": `vertical-tabpanel-${index}`,
   };
 }
 
@@ -75,7 +75,7 @@ const About = () => {
                 <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center md:flex-row lg:justify-start">
                   Front-End Web Developer{" "}
                   <span className="hidden md:block"> &gt; </span>
-                  <span> Aspiring FullStack Developer</span>
+                  <span> Aspiring Full Stack Developer</span>
                 </p>
               </Fade>
               <hr className="mb-6 opacity-5" />
@@ -116,22 +116,42 @@ const About = () => {
         </div>
 
         <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
-         <Box sx={{ width: '100%' }}>
-              <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
-                <Tabs value={value} onChange={handleChange} textColor="primary" aria-label="basic tabs example" TabIndicatorProps={{style: {backgroundColor:'#02b1c2'}}} centered>
-                  <Tab label={<span className="text-black dark:text-white">Experience</span>} {...a11yProps(0)} />
-                  <Tab label={<span className="text-black dark:text-white">Trainings / Certs</span>} {...a11yProps(1)} />
-                </Tabs>
-              </Box>
-              <TabPanel value={value} index={0}>
-                <Experience/>
-              </TabPanel>
-              <TabPanel value={value} index={1}>
-                <Trainings />
-              </TabPanel>
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                textColor="primary"
+                aria-label="basic tabs example"
+                TabIndicatorProps={{ style: { backgroundColor: "#02b1c2" } }}
+                centered
+              >
+                <Tab
+                  label={
+                    <span className="text-black dark:text-white">
+                      Experience
+                    </span>
+                  }
+                  {...a11yProps(0)}
+                />
+                <Tab
+                  label={
+                    <span className="text-black dark:text-white">
+                      Trainings / Certs
+                    </span>
+                  }
+                  {...a11yProps(1)}
+                />
+              </Tabs>
             </Box>
+            <TabPanel value={value} index={0}>
+              <Experience />
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <Trainings />
+            </TabPanel>
+          </Box>
         </div>
-
       </div>
     </section>
   );
