@@ -9,13 +9,13 @@ export const services = [
       img: webdevelopment,
       name: "Web Development",
       description:
-        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS, Redux for state management",
+        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS, Redux for state management.",
     },
     {
       img: responsive,
       name: "Responsive Web Design",
       description:
-        "Check my mini projects and this portfolio for responsive checking. Frameworks that i used: Bootstrap, Tailwind CSS, Material UI and Ant Design.",
+        "Frameworks that i've been using: Bootstrap, Tailwind CSS, Material UI and Ant Design. Flex-box, Grid and Media Queries.",
     },
     {
       img: inprogress,

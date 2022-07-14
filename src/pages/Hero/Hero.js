@@ -62,7 +62,7 @@ const Hero = () => {
                   width={40}
                 />
               </p>
-              <h1 className="text-3xl text-black dark:text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
+              <h1 className="text-3xl text-center text-black dark:text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-left lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
                 I Build & Design <br /> Web Interfaces.
               </h1>
               <p className="pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">

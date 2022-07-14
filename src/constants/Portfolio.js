@@ -1,5 +1,4 @@
 // projects images
-import calculator from "../assets/img/projects/Calculator.PNG";
 import teslaClone from "../assets/img/projects/Tesla-clone.PNG";
 import expenseTracker from "../assets/img/projects/expense.PNG";
 import weatherApp from "../assets/img/projects/Weather App.PNG";
@@ -15,7 +14,6 @@ import slider4 from "../assets/img/projects/fdc_appointment.PNG";
 import slider5 from "../assets/img/projects/FDC_dashboard.PNG";
 
 //projects clips
-import calculatorClip from "../assets/clips/calculatorClip.webm";
 import teslaCloneClip from "../assets/clips/tesla.webm";
 import expenseTrackerClip from "../assets/clips/expense.webm";
 import weatherAppClip from "../assets/clips/weather.webm";
@@ -26,17 +24,6 @@ import cryptoverseClip from "../assets/clips/cryptoverse.webm";
 export const projectsData = [
     {
       id: "1",
-      image: calculator,
-      name: "Calculator",
-      category: "mini projects",
-      description: ['React Js','CSS'],
-      clip: calculatorClip,
-      pointer: false,
-      demo: "https://reactjscalculator1.netlify.app/",
-      github: "https://github.com/BryanPalad/calculator_reactjs",
-    },
-    {
-      id: "2",
       image: teslaClone,
       name: "Tesla Clone",
       category: "mini projects",
@@ -47,7 +34,7 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/Tesla-clone",
     },
     {
-      id: "3",
+      id: "2",
       image: expenseTracker,
       name: "Expense Tracker",
       category: "mini projects",
@@ -58,7 +45,7 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/expenses_tracker_redux",
     },
     {
-      id: "4",
+      id: "3",
       image: cryptoverse,
       name: "Cryptoverse",
       category: "mini projects",
@@ -69,7 +56,7 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/Cryptoverse",
     },
     {
-      id: "5",
+      id: "4",
       image: weatherApp,
       name: "Weather/News App",
       category: "mini projects",
@@ -80,7 +67,7 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/Weather-News-App",
     },
     {
-      id: "6",
+      id: "5",
       image: myPortfolio,
       name: "My First Portfolio",
       category: "mini projects",
@@ -90,7 +77,7 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/my_portfolio",
     },
     {
-      id: "7",
+      id: "6",
       image: collegeProject,
       name: "Online Appointment System for Fernandez Dental Clinic",
       category: "college project",
@@ -136,7 +123,7 @@ export const projectsNav = [
     {
       patientsFunction: [
         {
-          function: "• Sign up with email code verification / Log-in account",
+          function: "• Sign up with email code verification / Log-in account.",
         },
         {
           function:
@@ -168,7 +155,7 @@ export const projectsNav = [
         },
         {
           function:
-            "• Track pending appointments in their dashboard. Patients Information and Service/s",
+            "• Track pending appointments in their dashboard. Patients Information and Service/s.",
         },
         {
           function:
@@ -176,11 +163,11 @@ export const projectsNav = [
         },
         {
           function:
-            "• Modify appointment record. Medication, Diagnosis and Prognosis",
+            "• Modify appointment record. Medication, Diagnosis and Prognosis.",
         },
         {
           function:
-            "• Can set a follow up appointment or complete service if there are no concerns",
+            "• Can set a follow up appointment or complete service if there are no concerns.",
         },
         {
           function:
@@ -188,7 +175,7 @@ export const projectsNav = [
         },
         {
           function:
-            "• Can set their own schedule by date and time for availability",
+            "• Can set their own schedule by date and time for availability.",
         },
         {
           function:
@@ -196,19 +183,19 @@ export const projectsNav = [
         },
         {
           function:
-            "• Track patients dental records, successful or cancelled appointments",
+            "• Track patients dental records, successful or cancelled appointments.",
         },
         {
           function:
-            "• Dentists Management (Can add new dentist/s, archive or unarchive)",
+            "• Dentists Management (Can add new dentist/s, archive or unarchive).",
         },
         {
           function:
-            "• Dentists Profile (Can modify information)",
+            "• Dentists Profile (Can modify information).",
         },
         {
           function:
-            "• Settings Tab (can modify the landing page design, e.g. background images, sliders, navbar details and color, frequently asked questions, mission vision, contact details, terms and conditions, policy, testimonials, footer details and color ",
+            "• Settings Tab (can modify the landing page design, e.g. background images, sliders, navbar details and color, frequently asked questions, mission vision, contact details, terms and conditions, policy, testimonials, footer details and color. ",
         },
       ],
     },

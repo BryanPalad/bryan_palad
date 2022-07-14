@@ -1,7 +1,6 @@
 import "./App.css";
 // components
 import {
-  Header,
   Hero,
   About,
   Skills,
@@ -9,9 +8,10 @@ import {
   Services,
   Testimonials,
   Contact,
-  Footer,
-  BackToTop,
-} from "./components";
+} from "./pages";
+
+import { Header, Footer, BackToTop } from "./components";
+
 function App() {
   return (
     <div>

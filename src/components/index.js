@@ -1,10 +1,3 @@
-export { default as Header } from '../components/Header/Header';
-export { default as Hero } from '../components/Hero/Hero';
-export { default as About } from '../components/About/About';
-export { default as Skills } from '../components/Skills/Skills';
-export { default as Portfolio } from '../components/Portfolio/Portfolio';
-export { default as Services } from '../components/Services/Services';
-export { default as Testimonials } from '../components/Testimonials/Testimonials';
-export { default as Contact } from '../components/Contact/ContactEmail';
-export { default as Footer } from '../components/Footer/Footer';
-export { default as BackToTop } from '../components/BackToTop';
+export {default as Footer} from './Footer/Footer';
+export {default as Header} from './Header/Header';
+export {default as BackToTop} from './BackToTop';
