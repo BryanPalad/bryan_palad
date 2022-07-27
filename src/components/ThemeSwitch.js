@@ -77,7 +77,7 @@ const ThemeSwitch = ({ mobile }) => {
         </>
       ) : (
         <>
-          <div className="day-night s-icon">
+          <div className="day-night s-icon cursor-pointer">
             <i
               onClick={dayNight}
               title={theme === "fa-sun" ? "Light Mode" : "Dark Mode"}

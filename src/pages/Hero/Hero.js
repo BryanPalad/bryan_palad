@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import typing effect
 import ReactTypingEffect from "react-typing-effect";
 // import downloadble resume
-import CV from "../../assets/files/Bryan_Palad_CV.pdf";
+import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
 import profile from "../../assets/img/gradpic.jpg";
 // import for lottie, gif files
