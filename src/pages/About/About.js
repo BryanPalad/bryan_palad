@@ -6,57 +6,14 @@ import { Fade } from "react-reveal";
 // import icons
 import { BsEmojiSmile } from "react-icons/bs";
 import { SiSemanticweb } from "react-icons/si";
-// mui tabs
-import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 // import components
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Trainings from "./Trainings";
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`vertical-tabpanel-${index}`}
-      aria-labelledby={`vertical-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
-  };
-}
+import {AppTabPanel} from "../../components";
 
 const About = () => {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   const date = new Date();
   const year = date.getFullYear();
   const birthYear = 1999;
@@ -114,43 +71,13 @@ const About = () => {
             </Fade>
           </div>
         </div>
-
         <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
-          <Box sx={{ width: "100%" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                textColor="primary"
-                aria-label="basic tabs example"
-                TabIndicatorProps={{ style: { backgroundColor: "#02b1c2" } }}
-                centered
-              >
-                <Tab
-                  label={
-                    <span className="text-black dark:text-white">
-                      Experience
-                    </span>
-                  }
-                  {...a11yProps(0)}
-                />
-                <Tab
-                  label={
-                    <span className="text-black dark:text-white">
-                      Trainings / Certs
-                    </span>
-                  }
-                  {...a11yProps(1)}
-                />
-              </Tabs>
-            </Box>
-            <TabPanel value={value} index={0}>
-              <Experience />
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <Trainings />
-            </TabPanel>
-          </Box>
+          <AppTabPanel
+            TabTitle1={"Experience"}
+            TabTitle2={"Trainings / Cert"}
+            Tab1={<Experience />}
+            Tab2={<Trainings />}
+          />
         </div>
       </div>
     </section>

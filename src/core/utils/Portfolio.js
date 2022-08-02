@@ -1,23 +1,23 @@
 // projects images
-import teslaClone from "../assets/img/projects/Tesla-clone.PNG";
-import expenseTracker from "../assets/img/projects/expense.PNG";
-import weatherApp from "../assets/img/projects/Weather App.PNG";
-import cryptoverse from "../assets/img/projects/Cryptoverse.PNG";
-import collegeProject from "../assets/img/projects/FernandezDentalClinic.PNG";
-import myPortfolio from "../assets/img/projects/My_Portfolio.PNG";
+import teslaClone from "../../assets/img/projects/Tesla-clone.PNG";
+import expenseTracker from "../../assets/img/projects/expense.PNG";
+import weatherApp from "../../assets/img/projects/Weather App.PNG";
+import cryptoverse from "../../assets/img/projects/Cryptoverse.PNG";
+import collegeProject from "../../assets/img/projects/FernandezDentalClinic.PNG";
+import myPortfolio from "../../assets/img/projects/My_Portfolio.PNG";
 
 // college project modal
-import slider1 from "../assets/img/projects/FernandezDentalClinic.PNG";
-import slider2 from "../assets/img/projects/fdc_signup.PNG";
-import slider3 from "../assets/img/projects/fdc_patient.PNG";
-import slider4 from "../assets/img/projects/fdc_appointment.PNG";
-import slider5 from "../assets/img/projects/FDC_dashboard.PNG";
+import slider1 from "../../assets/img/projects/FernandezDentalClinic.PNG";
+import slider2 from "../../assets/img/projects/fdc_signup.PNG";
+import slider3 from "../../assets/img/projects/fdc_patient.PNG";
+import slider4 from "../../assets/img/projects/fdc_appointment.PNG";
+import slider5 from "../../assets/img/projects/FDC_dashboard.PNG";
 
 //projects clips
-import teslaCloneClip from "../assets/clips/tesla.webm";
-import expenseTrackerClip from "../assets/clips/expense.webm";
-import weatherAppClip from "../assets/clips/weather.webm";
-import cryptoverseClip from "../assets/clips/cryptoverse.webm";
+import teslaCloneClip from "../../assets/clips/tesla.webm";
+import expenseTrackerClip from "../../assets/clips/expense.webm";
+import weatherAppClip from "../../assets/clips/weather.webm";
+import cryptoverseClip from "../../assets/clips/cryptoverse.webm";
 
 
 // projects
@@ -25,7 +25,7 @@ export const projectsData = [
     {
       id: "1",
       image: teslaClone,
-      name: "Tesla Clone",
+      name: "Tesla UI",
       category: "mini projects",
       description: ['React Js','Styled Components','CSS'],
       clip: teslaCloneClip,

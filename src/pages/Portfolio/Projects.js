@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import projects data and nav data
-import { projectsData, projectsNav } from "../../constants/Portfolio";
+import { projectsData, projectsNav } from "../../core/utils/Portfolio";
 //import components
 import Project from "./Project";
 

@@ -1,6 +1,6 @@
 import React from "react";
 // import skills data
-import { skills } from "../../constants/Skills";
+import { skills } from "../../core/utils/Skills";
 // import fade effect
 import { Fade } from "react-reveal";
 

@@ -1,10 +1,10 @@
 import React from "react";
 // import fade effect
 import { Fade } from "react-reveal";
-// import spinner
-import { ClipLoader } from "react-spinners";
 // import contact data
-import { contact } from "../../constants/Contact";
+import { contact } from "../../core/utils/Contact";
+// import contactfield component
+import ContactFields from "./ContactFields";
 
 const Contact = ({
   form,
@@ -55,67 +55,17 @@ const Contact = ({
               );
             })}
           </div>
-          {/* FORM */}
-          <form
-            ref={form}
-            className="space-y-8 w-full max-w-[780px]"
-            onSubmit={handleSubmit}
-          >
-            <div className="flex flex-col gap-6 lg:flex-row w-full lg:gap-8">
-              <div className="w-full">
-                <input
-                  className="input"
-                  name="fullname"
-                  type="text"
-                  value={formValues.fullname}
-                  onChange={handleChange}
-                  placeholder="Your Full Name"
-                />
-                <p className="errorTextInput"> {formErrors.fullname}</p>
-              </div>
-              <div className="w-full">
-                <input
-                  className="input"
-                  name="email"
-                  type="email"
-                  value={formValues.email}
-                  onChange={handleChange}
-                  placeholder="Your Email"
-                />
-                <p className="errorTextInput"> {formErrors.email}</p>
-              </div>
-            </div>
-            <input
-              type="text"
-              name="subject"
-              className="input"
-              value={formValues.subject}
-              onChange={handleChange}
-              placeholder="Subject"
-            />
-            <p className="errorTextArea"> {formErrors.subject}</p>
-            <textarea
-              className="textarea"
-              name="message"
-              value={formValues.message}
-              onChange={handleChange}
-              placeholder="Your message"
-            ></textarea>
-            <p className="errorTextArea"> {formErrors.message}</p>
-            <button
-              type="submit"
-              className="btn btn-lg bg-accent hover:bg-accent-hover flex gap-2"
-            >
-              Send{ing} Message
-              <ClipLoader
-                className="pl-2"
-                color={"white"}
-                loading={loading}
-                size={10}
-              />
-              <audio ref={audioPlayer} src={NotificationSound} />
-            </button>
-          </form>
+          <ContactFields
+            form={form}
+            handleSubmit={handleSubmit}
+            formValues={formValues}
+            handleChange={handleChange}
+            formErrors={formErrors}
+            ing={ing}
+            loading={loading}
+            audioPlayer={audioPlayer}
+            NotificationSound={NotificationSound}
+          />
         </div>
       </div>
     </section>

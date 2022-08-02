@@ -4,7 +4,7 @@ import { SiNintendogamecube } from "react-icons/si";
 // import fade effect
 import { Fade } from "react-reveal";
 //import social data
-import { social } from "../../constants/Header";
+import { social } from "../../core/utils/Header";
 
 const Footer = () => {
   return (

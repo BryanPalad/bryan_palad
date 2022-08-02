@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 // import smooth scroll
 import { Link } from "react-scroll";
 //import services data
-import { services } from "../../constants/Services";
+import { services } from "../../core/utils/Services";
 
 const Services = () => {
   return (

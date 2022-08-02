@@ -1,7 +1,7 @@
 //training images
-import simplilearn from "../assets/img/trainings/simplilearn.png";
-import modernresolve from "../assets/img/trainings/modernresolve.png";
-import greatLearning from "../assets/img/trainings/greatLearning.png";
+import simplilearn from "../../assets/img/trainings/simplilearn.png";
+import modernresolve from "../../assets/img/trainings/modernresolve.png";
+import greatLearning from "../../assets/img/trainings/greatLearning.png";
 
 //experience
 export const experience = [

@@ -1,6 +1,6 @@
 import React from 'react'
 // import social data
-import {social} from '../../constants/Header';
+import {social} from '../../core/utils/Header';
 
 const Socials = () => {
   return (

@@ -3,7 +3,7 @@ import "./about.css";
 // import icon
 import { FiCalendar } from "react-icons/fi";
 // import trainings data
-import { trainings, internship } from "../../constants/About";
+import { trainings, internship } from "../../core/utils/About";
 
 const Trainings = () => {
   return (

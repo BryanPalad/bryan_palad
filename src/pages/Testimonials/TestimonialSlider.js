@@ -1,6 +1,6 @@
 import React from "react";
 // testimonials data
-import { testimonials } from "../../constants/Testimonials";
+import { testimonials } from "../../core/utils/Testimonials";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles

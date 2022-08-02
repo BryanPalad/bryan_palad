@@ -1,7 +1,7 @@
 // testimonial images
-import TestiImage1 from "../assets/img/testimonials/mark.avif";
-import TestiImage2 from "../assets/img/testimonials/billgates.webp";
-import TestiImage3 from "../assets/img/testimonials/steve.jpg";
+import TestiImage1 from "../../assets/img/testimonials/mark.avif";
+import TestiImage2 from "../../assets/img/testimonials/billgates.webp";
+import TestiImage3 from "../../assets/img/testimonials/steve.jpg";
 
 // testimonials
 export const testimonials = [

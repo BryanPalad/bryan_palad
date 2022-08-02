@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 // import experience data
-import { experience } from "../../constants/About";
+import { experience } from "../../core/utils/About";
 // import icon
 import { FiCalendar } from "react-icons/fi";
 const Experience = () => {

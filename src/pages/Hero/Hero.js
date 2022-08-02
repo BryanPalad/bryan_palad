@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import typing effect
-import ReactTypingEffect from "react-typing-effect";
 // import downloadble resume
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
@@ -14,9 +12,10 @@ import Fade from "react-reveal/Fade";
 //import down icon
 import { CgChevronDown } from "react-icons/cg";
 // import typing effect data
-import { typing } from "../../constants/Hero";
+import { typing } from "../../core/utils/Hero";
 // import smooth scrolling
 import { Link } from "react-scroll";
+import {TypingEffect} from "../../components";
 
 const Hero = () => {
   const [arrow, setArrow] = useState(false);
@@ -67,28 +66,7 @@ const Hero = () => {
               </h1>
               <p className="pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
                 I'm a <span className="-ml-2">&nbsp;</span>
-                <ReactTypingEffect
-                  text={typing}
-                  cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-                  speed={50}
-                  eraseSpeed={50}
-                  eraseDelay={1500}
-                  typingDelay={120}
-                  displayTextRenderer={(text, i) => {
-                    return (
-                      <h1>
-                        {text.split("").map((char, i) => {
-                          const key = `${i}`;
-                          return (
-                            <span key={key} className="text-accent font-logo">
-                              {char}
-                            </span>
-                          );
-                        })}
-                      </h1>
-                    );
-                  }}
-                />
+                <TypingEffect typingText={typing}/>
               </p>
               {/* </p> */}
               <a href={CV} download>

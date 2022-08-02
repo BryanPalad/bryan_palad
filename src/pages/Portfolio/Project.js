@@ -9,20 +9,10 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
-// import for skills chip
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-// import for image sliders
-import { Slide } from "react-slideshow-image";
 // import college project modal
-import { collegeProjectModal as modalObj } from "../../constants/Portfolio";
-// import for drop down tab // accordion
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// import for react-slideshow
-import "react-slideshow-image/dist/styles.css";
+import { collegeProjectModal as modalObj } from "../../core/utils/Portfolio";
+//import components
+import {AppChip, AppAccordion, AppSlide} from "../../components";
 
 const style = {
   position: "absolute",
@@ -101,78 +91,13 @@ const Project = ({ item }) => {
                       id="transition-modal-description"
                       sx={{ mt: 2 }}
                     >
-                      <Slide duration={2000} transitionDuration={800}>
-                        {modalObj[0].sliderImg.map((item, index) => {
-                          return (
-                            <img
-                              className="mb-2"
-                              src={item.slide}
-                              alt="portfolio"
-                              key={index}
-                            />
-                          );
-                        })}
-                      </Slide>
+                      <AppSlide slideArray={modalObj[0].sliderImg} duration={2000} transitionDuration={800}/>
                       <hr className="mb-2" />
                       <h1 className="text-black text-2xl md:text-2xl font-logo mt-2 text-center mb-2">
                         Main Functions
                       </h1>
-                      <Accordion>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1a-content"
-                          id="panel1a-header"
-                        >
-                          <Typography className="text-md">
-                            What Patients can do?
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            <h3>
-                              {modalObj[1].patientsFunction.map(
-                                (item, index) => {
-                                  return (
-                                    <p
-                                      className="text-black font-logo text-md md:text-lg"
-                                      key={index}
-                                    >
-                                      {item.function}
-                                    </p>
-                                  );
-                                }
-                              )}
-                            </h3>
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2a-content"
-                          id="panel2a-header"
-                        >
-                          <Typography>What Dentists can do?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            <h3>
-                              {modalObj[2].dentistsFunction.map(
-                                (item, index) => {
-                                  return (
-                                    <p
-                                      className="text-black font-logo text-md md:text-lg"
-                                      key={index}
-                                    >
-                                      {item.function}
-                                    </p>
-                                  );
-                                }
-                              )}
-                            </h3>
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
+                      <AppAccordion title={'What Patients can do?'} accordionArray={modalObj[1].patientsFunction}/>
+                      <AppAccordion title={'What Dentists can do?'} accordionArray={modalObj[2].dentistsFunction}/>
                     </Typography>
                   </Box>
                 </Fade>
@@ -204,20 +129,7 @@ const Project = ({ item }) => {
             </>
           )}
         </div>
-        <Stack direction="row" spacing={0.5}>
-          {item.description.map((desc, index) => {
-            return (
-              <div key={index}>
-                <Chip
-                  label={desc}
-                  style={{ color: "#42cef5", fontWeight: 400 }}
-                  variant="outlined"
-                />
-              </div>
-            );
-          })}
-        </Stack>
-
+        <AppChip chipArray={item.description} style={{color: "#42cef5", fontWeight: 400}} variant={'outlined'} direction={'row'} spacing={0.5}/>
         <p className="capitalize text-accent text-sm mb-3">
           {/* {item.description} */}
         </p>

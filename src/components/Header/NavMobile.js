@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import navigation data
-import { navigation } from "../../constants/Header";
+import { navigation } from "../../core/utils/Header";
 //import icons
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";

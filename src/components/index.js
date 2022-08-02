@@ -1,3 +1,10 @@
+export {default as AppAccordion} from './Accordion/Accordion';
+export {default as AppChip} from './Chip/Chip';
 export {default as Footer} from './Footer/Footer';
 export {default as Header} from './Header/Header';
+export {default as AppSlide} from './Slide/Slide';
+export {default as AppTabPanel} from './Tabs/TabPanel';
+export {default as AppTextArea} from './TextArea/TextArea';
+export {default as AppTextField} from './TextField/Textfield';
+export {default as TypingEffect} from './TypingEffect/TypinEffect';
 export {default as BackToTop} from './BackToTop';

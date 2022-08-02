@@ -1,7 +1,7 @@
 import React from 'react'
 
 // import navigation data
-import {navigation} from '../../constants/Header';
+import {navigation} from '../../core/utils/Header';
 //import link
 import {Link} from 'react-scroll';
 //import for dark mode / light mode
