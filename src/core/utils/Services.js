@@ -9,7 +9,7 @@ export const services = [
       img: webdevelopment,
       name: "Web Development",
       description:
-        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS, Redux for state management.",
+        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS",
     },
     {
       img: responsive,
@@ -19,7 +19,7 @@ export const services = [
     },
     {
       img: inprogress,
-      name: "On Progress",
+      name: "In Progress",
       description:
         "Planning to learn prog. languages such as typescript, advance java w/spring, python or any language for backend development.",
     },

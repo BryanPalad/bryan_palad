@@ -13,7 +13,7 @@ import bootstrap from '../../assets/img/skills/bootstrap.png';
 import mui from "../../assets/img/skills/mui.png";
 import antdesign from "../../assets/img/skills/antdesign.png";
 import tailwind from "../../assets/img/skills/tailwind.png";
-import netlify from "../../assets/img/skills/netlify.png";
+import npm from "../../assets/img/skills/npm.png";
 
 export const skills = [
     {
@@ -62,7 +62,7 @@ export const skills = [
       image: tailwind,
     },
     {
-      image: netlify,
+      image: npm,
     },
   ];
   
