@@ -31,7 +31,7 @@ const About = () => {
                 </h2>
                 <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center md:flex-row lg:justify-start">
                   Front-End Web Developer{" "}
-                  <span className="hidden md:block"> &gt; </span>
+                  <span className="hidden md:block"> ➔ </span>
                   <span> Aspiring Full Stack Developer</span>
                 </p>
               </Fade>

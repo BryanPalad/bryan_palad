@@ -22,15 +22,15 @@ module.exports = {
     extend: {
       content: {
         about: 'url("/src/assets/img/outline-text/about.svg")',
-        about2: 'url("/src/assets/img/outline-text/about2.svg")',
+        about2: 'url("/src/assets/img/outline-text/about2.svg")', // black font
         portfolio: 'url("/src/assets/img/outline-text/portfolio.svg")',
-        portfolio2: 'url("/src/assets/img/outline-text/portfolio2.svg")',
+        portfolio2: 'url("/src/assets/img/outline-text/portfolio2.svg")', // black font
         services: 'url("/src/assets/img/outline-text/services.svg")',
-        services2: 'url("/src/assets/img/outline-text/services2.svg")',
+        services2: 'url("/src/assets/img/outline-text/services2.svg")', // black font
         testimonials: 'url("/src/assets/img/outline-text/testimonials.svg")',
-        testimonials2: 'url("/src/assets/img/outline-text/testimonials2.svg")',
+        testimonials2: 'url("/src/assets/img/outline-text/testimonials2.svg")', // black font
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
-        contact2: 'url("/src/assets/img/outline-text/contact2.svg")',
+        contact2: 'url("/src/assets/img/outline-text/contact2.svg")', // black font
       },
 
       colors: {

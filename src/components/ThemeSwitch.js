@@ -49,14 +49,14 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
 
 const ThemeSwitch = ({ mobile }) => {
   const mobileTheme = mobile;
-  const [theme, setTheme] = useState("fa-moon");
+  const [theme, setTheme] = useState("fa-sun");
 
   const dayNight = () => {
-    setTheme("fa-sun");
+    setTheme("fa-moon");
     document.body.classList.toggle("dark");
-    if (theme === "fa-sun") {
-      setTheme("fa-moon");
-      document.body.classList.toggle("");
+    if (theme === "fa-moon") {
+      setTheme("fa-sun");
+      document.body.classList.toggle("sun");
     }
   };
   return (
@@ -65,13 +65,13 @@ const ThemeSwitch = ({ mobile }) => {
         <>
           <FormGroup className="mb-10">
             <Stack direction="row" spacing={1} alignItems="center">
-              <Typography>Dark Mode</Typography>
+              <Typography>Light Mode</Typography>
               <AntSwitch
                 defaultChecked
                 inputProps={{ "aria-label": "ant design" }}
                 onClick={dayNight}
               />
-              <Typography>Light Mode</Typography>
+              <Typography>Dark Mode</Typography>
             </Stack>
           </FormGroup>
         </>
