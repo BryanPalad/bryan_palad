@@ -31,7 +31,7 @@ const About = () => {
                 </h2>
                 <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center md:flex-row lg:justify-start">
                   Front-End Web Developer{" "}
-                  <span className="hidden md:block"> ➔ </span>
+                  <span className="hidden md:block"> 🚀 </span>
                   <span> Aspiring Full Stack Developer</span>
                 </p>
               </Fade>
@@ -49,7 +49,7 @@ const About = () => {
                   offset={-70}
                   className="transition-all duration-300"
                 >
-                  <button className="mt-5 btn btn-md bg-accent hover:bg-accent-hover transition-all gap-1.5">
+                  <button className="mt-5 btn btn-md text-white dark:text-black bg-accent hover:bg-accent-hover transition-all gap-1.5">
                     Hire me <BsEmojiSmile className="hidden lg:block" />
                   </button>
                 </Link>
@@ -63,7 +63,7 @@ const About = () => {
                   offset={-70}
                   className="transition-all duration-300"
                 >
-                  <button className="mt-5 btn btn-md bg-accent hover:bg-accent-hover transition-all gap-1.5">
+                  <button className="mt-5 btn btn-md text-white dark:text-black bg-accent hover:bg-accent-hover transition-all gap-1.5">
                     Projects <SiSemanticweb className="hidden lg:block" />
                   </button>
                 </Link>
