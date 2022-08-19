@@ -1,10 +1,10 @@
 // projects images
 import teslaClone from "../../assets/img/projects/tesla.png";
-import expenseTracker from "../../assets/img/projects/expense.png";
-import weatherApp from "../../assets/img/projects/Weather App.png";
-import cryptoverse from "../../assets/img/projects/Cryptoverse.png";
+import expenseTracker from "../../assets/img/projects/expensesTracker.png";
+import weatherApp from "../../assets/img/projects/WeatherNewsApp.png";
+import cryptoverse from "../../assets/img/projects/CryptoverseApp.png";
 import collegeProject from "../../assets/img/projects/FernandezDentalClinic.PNG";
-import myPortfolio from "../../assets/img/projects/My_Portfolio.png";
+import myPortfolio from "../../assets/img/projects/firstPortfolio.png";
 import modernresolve from "../../assets/img/projects/modernresolve.PNG";
 
 // college project modal
