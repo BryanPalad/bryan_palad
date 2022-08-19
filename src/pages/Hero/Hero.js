@@ -47,7 +47,7 @@ const Hero = () => {
       id="home"
       className="h-[100vh] flex items-center bg-primaryWhite dark:bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
-      <div className="container mx-auto h-full flex flex-col justify-center">
+      <div className="container bg-fixed mx-auto h-full flex flex-col justify-center">
         <div className="flex items-center h-full pt-8">
           {/* left-side */}
           <Fade left>

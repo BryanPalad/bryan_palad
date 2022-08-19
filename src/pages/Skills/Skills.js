@@ -1,7 +1,5 @@
 import React from "react";
-// import skills data
 import { skills } from "../../core/utils/Skills";
-// import fade effect
 import { Fade } from "react-reveal";
 
 const Skills = () => {

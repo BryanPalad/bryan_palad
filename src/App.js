@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero/>
       <About />
       <Skills />
       <Portfolio />

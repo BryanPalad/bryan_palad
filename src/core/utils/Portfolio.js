@@ -1,10 +1,11 @@
 // projects images
-import teslaClone from "../../assets/img/projects/Tesla-clone.PNG";
-import expenseTracker from "../../assets/img/projects/expense.PNG";
-import weatherApp from "../../assets/img/projects/Weather App.PNG";
-import cryptoverse from "../../assets/img/projects/Cryptoverse.PNG";
+import teslaClone from "../../assets/img/projects/Tesla-clone.png";
+import expenseTracker from "../../assets/img/projects/expense.png";
+import weatherApp from "../../assets/img/projects/Weather App.png";
+import cryptoverse from "../../assets/img/projects/Cryptoverse.png";
 import collegeProject from "../../assets/img/projects/FernandezDentalClinic.PNG";
-import myPortfolio from "../../assets/img/projects/My_Portfolio.PNG";
+import myPortfolio from "../../assets/img/projects/My_Portfolio.png";
+import modernresolve from "../../assets/img/projects/modernresolve.PNG";
 
 // college project modal
 import slider1 from "../../assets/img/projects/FernandezDentalClinic.PNG";
@@ -12,13 +13,6 @@ import slider2 from "../../assets/img/projects/fdc_signup.PNG";
 import slider3 from "../../assets/img/projects/fdc_patient.PNG";
 import slider4 from "../../assets/img/projects/fdc_appointment.PNG";
 import slider5 from "../../assets/img/projects/FDC_dashboard.PNG";
-
-//projects clips
-import teslaCloneClip from "../../assets/clips/tesla.webm";
-import expenseTrackerClip from "../../assets/clips/expense.webm";
-import weatherAppClip from "../../assets/clips/weather.webm";
-import cryptoverseClip from "../../assets/clips/cryptoverse.webm";
-
 
 // projects
 export const projectsData = [
@@ -28,7 +22,6 @@ export const projectsData = [
       name: "Tesla UI",
       category: "mini projects",
       description: ['React Js','Styled Components','CSS'],
-      clip: teslaCloneClip,
       pointer: false,
       demo: "https://teslacloneui.netlify.app/",
       github: "https://github.com/BryanPalad/Tesla-clone",
@@ -39,35 +32,32 @@ export const projectsData = [
       name: "Expense Tracker",
       category: "mini projects",
       description: ['React Js','Redux','MUI'],
-      clip: expenseTrackerClip,
       pointer: false,
       demo: "https://expensetrackermini.netlify.app/",
       github: "https://github.com/BryanPalad/expenses_tracker_redux",
     },
-    // {
-    //   id: "3",
-    //   image: cryptoverse,
-    //   name: "Cryptoverse",
-    //   category: "mini projects",
-    //   description: ['React Js','Redux','2 Api','Ant Design'],
-    //   clip: cryptoverseClip,
-    //   pointer: false,
-    //   demo: "https://cryptoversemini.netlify.app/",
-    //   github: "https://github.com/BryanPalad/Cryptoverse",
-    // },
     {
       id: "3",
+      image: cryptoverse,
+      name: "Cryptoverse",
+      category: "mini projects",
+      description: ['React Js','Redux','2 Api','Ant Design'],
+      pointer: false,
+      demo: "https://cryptoversemini.netlify.app/",
+      github: "https://github.com/BryanPalad/Cryptoverse",
+    },
+    {
+      id: "4",
       image: weatherApp,
       name: "Weather/News App",
       category: "mini projects",
       description: ['React Js','Redux','3 Api','MUI'],
-      clip: weatherAppClip,
       pointer: false,
       demo: "https://miniweather-news-app.netlify.app/",
       github: "https://github.com/BryanPalad/Weather-News-App",
     },
     {
-      id: "4",
+      id: "5",
       image: myPortfolio,
       name: "My First Portfolio",
       category: "mini projects",
@@ -77,13 +67,22 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/my_portfolio",
     },
     {
-      id: "5",
+      id: "6",
       image: collegeProject,
       name: "Online Appointment System for Fernandez Dental Clinic",
       category: "college project",
       description: ['PHP','CSS','Bootstrap','MySQL'],
       pointer: true,
       github: "https://github.com/BryanPalad/FernandezDentalClinic",
+    },
+    {
+      id: "7",
+      image: modernresolve,
+      name: "Modern Resolve E-Commerce",
+      category: "real world project",
+      description: ['React Js','MUI','Python','MySQL'],
+      pointer: false,
+      github: "https://github.com/JMSevilla/mdr_ecom_fe",
     },
   ];
   
@@ -97,6 +96,9 @@ export const projectsNav = [
     },
     {
       name: "college project",
+    },
+    {
+      name: "real world project",
     },
   ];
   

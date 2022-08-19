@@ -49,18 +49,8 @@ const Project = ({ item }) => {
   return (
     <>
       <div key={item.id} className="flex flex-col items-center text-center">
-        <div className="mb-4 relative ease-out hover:ease-in">
-          <img className="rounded-xl" src={item.image} alt="" />
-          <video
-            className="clip rounded-xl absolute opacity-0 z-1 top-0 object-cover h-full hover:opacity-100 "
-            loop
-            muted
-            autoPlay
-            controls=""
-          >
-            <source src={item.clip} type="video/mp4" />
-            <source src={item.clip} type="video/ogg" />
-          </video>
+        <div className="mb-4 relative">
+          <img className="rounded-xl hover:scale-105 duration-300" src={item.image} alt="" />
         </div>
         <div className="flex gap-8 mb-2">
           {item.pointer ? (
