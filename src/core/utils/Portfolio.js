@@ -1,5 +1,5 @@
 // projects images
-import teslaClone from "../../assets/img/projects/Tesla-clone.png";
+import teslaClone from "../../assets/img/projects/tesla.png";
 import expenseTracker from "../../assets/img/projects/expense.png";
 import weatherApp from "../../assets/img/projects/Weather App.png";
 import cryptoverse from "../../assets/img/projects/Cryptoverse.png";
