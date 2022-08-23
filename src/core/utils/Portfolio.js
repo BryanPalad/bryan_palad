@@ -78,9 +78,9 @@ export const projectsData = [
     {
       id: "7",
       image: modernresolve,
-      name: "Modern Resolve E-Commerce",
+      name: "Modern Resolve Ecommerce (On Progress)",
       category: "real world project",
-      description: ['React Js','MUI','Python','MySQL'],
+      description: ['React Js','MUI','MySQL'],
       pointer: false,
       github: "https://github.com/JMSevilla/mdr_ecom_fe",
     },

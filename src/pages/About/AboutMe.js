@@ -6,8 +6,7 @@ const AboutMe = ({ age }) => {
       <p className="mb-2 text-justify text-black dark:text-white">
         {age} years old, BS Information Technology graduate year 2019, became a
         lead programmer on our 2 thesis projects and had a hands-on experience
-        using C#, MySQL and PHP despite not having enough resources such as
-        stable internet connection for self learning.
+        using C#, MySQL and PHP. That was the time when i started to like programming.
         <br />
         <br />
         Landed my first job in a non-tech company where i spent almost 2 years
