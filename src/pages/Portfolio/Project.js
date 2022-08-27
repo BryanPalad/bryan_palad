@@ -50,7 +50,7 @@ const Project = ({ item }) => {
     <>
       <div key={item.id} className="flex flex-col items-center text-center">
         <div className="mb-4 relative">
-          <img className="rounded-xl hover:scale-105 duration-300" src={item.image} alt="" />
+          <img className="rounded-xl dark:bg-white bg-none hover:scale-105 duration-300" src={item.image} alt="" />
         </div>
         <div className="flex gap-8 mb-2">
           {item.pointer ? (

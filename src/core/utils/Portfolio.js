@@ -80,7 +80,7 @@ export const projectsData = [
       image: modernresolve,
       name: "Modern Resolve Ecommerce (On Progress)",
       category: "real world project",
-      description: ['React Js','MUI','MySQL'],
+      description: ['React Js','MUI','PostgreSQL', 'Python'],
       pointer: false,
       github: "https://github.com/JMSevilla/mdr_ecom_fe",
     },
