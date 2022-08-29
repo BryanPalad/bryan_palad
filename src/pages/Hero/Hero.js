@@ -53,7 +53,7 @@ const Hero = () => {
           <Fade left>
             <div className="flex-1 flex flex-col items-center lg:items-start">
               <p className="flex text-xl text-black dark:text-white mb-[22px] lg:text-3xl">
-                Hello, I'm Bryan Palad{" "}
+                Hello, I'm Bryan{" "}
                 <Lottie
                   options={loadingAnimation}
                   style={style}
