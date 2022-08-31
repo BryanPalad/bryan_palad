@@ -82,7 +82,7 @@ export const projectsData = [
       category: "real world project",
       description: ['React Js','MUI','PostgreSQL', 'Python'],
       pointer: false,
-      demo: "https://pre-prodmodernresolve.vercel.app/#/",
+      demo: "https://pre-prodmodernresolve.vercel.app",
       github: "https://github.com/JMSevilla/mdr_ecom_fe",
     },
   ];
