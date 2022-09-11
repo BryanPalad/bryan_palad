@@ -25,6 +25,7 @@ const Projects = () => {
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
+  
   return (
     <div>
       <nav className="mb-12 max-w-xl mx-auto">

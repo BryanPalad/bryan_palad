@@ -94,12 +94,12 @@ const Project = ({ item }) => {
               </Modal>
               <p
                 onClick={handleOpen}
-                className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent"
+                className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent dark:hover:text-accent"
               >
                 View Details <RiSearchEyeLine />
               </p>
               <a href={item.github} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent dark:hover:text-accent">
                   Github <FiGithub />
                 </p>
               </a>
@@ -107,12 +107,12 @@ const Project = ({ item }) => {
           ) : (
             <>
               <a href={item.demo} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent dark:hover:text-accent">
                   Live Demo <FiExternalLink />
                 </p>
               </a>
               <a href={item.github} target="_blank" rel="noreferrer">
-                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent">
+                <p className="flex justify-center text-lg text-black dark:text-white font-semibold items-center gap-1 cursor-pointer hover:text-accent dark:hover:text-accent">
                   Github <FiGithub />
                 </p>
               </a>

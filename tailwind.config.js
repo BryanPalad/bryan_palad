@@ -32,7 +32,7 @@ module.exports = {
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
         contact2: 'url("/src/assets/img/outline-text/contact2.svg")', // black font
       },
-
+      
       colors: {
         primary: '#050402', //black
         primaryWhite: '#fdf9ff',

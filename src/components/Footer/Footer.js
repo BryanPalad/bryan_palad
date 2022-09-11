@@ -10,7 +10,6 @@ const Footer = () => {
   return (
     <footer className="bg-tertiaryWhite dark:bg-tertiary py-12">
       <div className="container mx-auto">
-        <Fade bottom>
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between">
             {/* social icons    */}
             <div className="flex space-x-6 items-center">
@@ -36,11 +35,10 @@ const Footer = () => {
             {/* LOGO */}
             <div>
               <p className="text-3xl font-logo text-black dark:text-white flex items-center gap-2">
-                Bryan Palad <SiNintendogamecube />
+              BRYAN<SiNintendogamecube />
               </p>
             </div>
           </div>
-        </Fade>
       </div>
     </footer>
   );

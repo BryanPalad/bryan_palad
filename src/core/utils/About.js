@@ -6,7 +6,7 @@ import greatLearning from "../../assets/img/trainings/greatLearning.png";
 //experience
 export const experience = [
     {
-      date: "Oct.15 2019 - Jan. 15 2022",
+      date: "Oct 2019 - Jan 2022",
       designation: "Admin Staff (Triple Star Packaging Corporation)",
       subtitle: "Quality Management System (QMS) Assistant",
       desc1:

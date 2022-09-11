@@ -18,7 +18,7 @@ const About = () => {
   const year = date.getFullYear();
   const birthYear = 1999;
   const age = year - birthYear;
-
+  
   return (
     <section id="about" className="section bg-secondaryWhite dark:bg-secondary">
       <div className="container mx-auto mt-2 flex lg:flex-row flex-col">
@@ -29,7 +29,7 @@ const About = () => {
                 <h2 className="text-3xl lg:text-4xl text-black dark:text-white font-medium lg:font-extrabold mb-3 before:content-about2 dark:before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
                   About Me
                 </h2>
-                <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center md:flex-row lg:justify-start">
+                <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center font-semibold dark:font-normal md:flex-row lg:justify-start">
                   Front-End Web Developer{" "}
                   <span className="hidden md:block"> 🚀 </span>
                   <span> Aspiring Full Stack Developer</span>
@@ -73,8 +73,8 @@ const About = () => {
         </div>
         <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
           <AppTabPanel
-            TabTitle1={"Experience"}
-            TabTitle2={"Trainings / Cert"}
+            TabTitle1={"🔓 Experience"}
+            TabTitle2={"📃 Trainings / Cert"}
             Tab1={<Experience />}
             Tab2={<Trainings />}
           />

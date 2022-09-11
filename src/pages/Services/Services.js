@@ -43,10 +43,10 @@ const Services = () => {
                   className="transition-all duration-300"
                 >
                   <img className="mb-4" src={img} alt="services-img" />
-                  <h4 className="text-xl font-medium mb-2 dark:text-white text-black">
+                  <h4 className="text-xl font-semibold mb-2 dark:text-white text-black text-center">
                     {name}
                   </h4>
-                  <p className="text-justify dark:text-white text-black">
+                  <p className="text-justify dark:text-white tracking-tighter text-black">
                     {description}
                   </p>
                 </Link>

@@ -13,9 +13,9 @@ const Trainings = () => {
           return (
             <div className="timeline-item" key={index}>
               <div className="circle-dot"></div>
-              <h3 className="timeline-date flex text-black dark:text-white flex-row gap-x-2 mb-2">
+              <h3 className="timeline-date flex text-accent font-semibold dark:font-normal flex-row gap-x-2 mb-2">
                 <FiCalendar />{" "}
-                <span className="mt-[-3px] text-black dark:text-white font-body">
+                <span className="mt-[-3px] font-body">
                   {item.date}
                 </span>
               </h3>
@@ -33,9 +33,9 @@ const Trainings = () => {
           return (
             <div className="timeline-item" key={index}>
               <div className="circle-dot"></div>
-              <h3 className="timeline-date flex text-black dark:text-white flex-row gap-x-2 mb-2">
+              <h3 className="timeline-date flex text-accent font-semibold dark:font-normal flex-row gap-x-2 mb-2">
                 <FiCalendar />{" "}
-                <span className="mt-[-3px] text-black dark:text-white font-body">
+                <span className="mt-[-3px] font-body">
                   {item.date}
                 </span>
               </h3>
