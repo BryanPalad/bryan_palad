@@ -16,8 +16,8 @@ const Services = () => {
         {/* SECTION TITLE */}
         <Fade bottom>
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title mt-10 text-black dark:text-white dark:before:content-services before:content-services2 relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[160px] before:hidden before:lg:block">
-              What i can do
+            <h2 className="section-title text-3xl tracking-normal font-body normal text-black dark:text-white lg:text-5xl lg:tracking-wider lg:uppercase">
+              What I Can Do
             </h2>
             <p className="subtitle text-black dark:text-white">
               I will accept projects in the future...
@@ -30,7 +30,7 @@ const Services = () => {
             const { name, description, img } = service;
             return (
               <div
-                className="dark:bg-secondary bg-secondaryWhite p-6 rounded-2xl hover:translate-y-3 duration-300 cursor-pointer"
+                className="dark:bg-secondary bg-secondaryWhite grayscale hover:grayscale-0 p-6 rounded-2xl cursor-pointer"
                 key={index}
               >
                 <Link

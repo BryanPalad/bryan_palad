@@ -10,6 +10,8 @@ import "../../swiper.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+import Rating from '@mui/material/Rating';
+
 const TestimonialSlider = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const TestimonialSlider = () => {
         className="mySwiper"
       >
         {testimonials.map((item, index) => {
-          const { authorImg, authorText, authorName, authorPosition } = item;
+          const { authorImg, authorText, authorName, authorPosition, rating, precision } = item;
           return (
             <SwiperSlide key={index}>
               <div className="flex flex-col lg:flex-row gap-12 lg:gap-32 justify-center items-center text-center lg:justify-start lg:items-start lg:text-left">
@@ -47,6 +49,7 @@ const TestimonialSlider = () => {
                     <p className="text-black dark:text-white">
                       {authorPosition}
                     </p>
+                    <Rating className='items-end' defaultValue={rating} precision={precision} readOnly/>
                   </div>
                 </div>
               </div>

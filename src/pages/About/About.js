@@ -26,7 +26,7 @@ const About = () => {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <Fade bottom>
-                <h2 className="text-3xl lg:text-4xl text-black dark:text-white font-medium lg:font-extrabold mb-3 before:content-about2 dark:before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
+                <h2 className="uppercase drop-shadow-lg shadow-black text-3xl tracking-normal text-black dark:text-white font-body mb-3 lg:text-6xl lg:tracking-wider lg:font-extrabold">
                   About Me
                 </h2>
                 <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center font-semibold dark:font-normal md:flex-row lg:justify-start">

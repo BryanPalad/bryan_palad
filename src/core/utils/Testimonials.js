@@ -11,6 +11,8 @@ export const testimonials = [
         "The biggest risk is not taking any risk... In a world that changing really quickly, the only strategy that is guaranteed to fail is not taking risks.",
       authorName: "Mark Zuckerberg",
       authorPosition: "CEO of Facebook",
+      rating: 4,
+      precision: 1
     },
     {
       authorImg: TestiImage2,
@@ -18,6 +20,8 @@ export const testimonials = [
         "Do not compare yourself with anyone in this world ... if you do so, you are insulting yourself.",
       authorName: "Bill Gates",
       authorPosition: "Founder of Microsoft",
+      rating: 3.5,
+      precision: 0.5
     },
     {
       authorImg: TestiImage3,
@@ -25,5 +29,7 @@ export const testimonials = [
         "Your time is limited, so don't waste it living someone else's life",
       authorName: "Steve Jobs",
       authorPosition: "CEO of Apple",
+      rating: 5,
+      precision: 1
     },
   ];

@@ -3,10 +3,6 @@ import React, { useState, useEffect } from "react";
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
 import profile from "../../assets/img/gradpic.jpg";
-// import for lottie, gif files
-import Lottie from "react-lottie";
-// import waving hand
-import * as programming from "../../assets/clips/waving.json";
 // import fade effect
 import Fade from "react-reveal/Fade";
 //import down icon
@@ -26,22 +22,6 @@ const Hero = () => {
     });
   });
 
-  const style = {
-    color: "white",
-    marginTop: "-10px",
-    marginLeft: "5px",
-    transform: "rotate(320deg)",
-  };
-
-  const loadingAnimation = {
-    loop: true,
-    autoplay: true,
-    animationData: programming.default,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <section
       id="home"
@@ -54,12 +34,6 @@ const Hero = () => {
             <div className="flex-1 flex flex-col items-center lg:items-start">
               <p className="flex text-xl text-black dark:text-white mb-[22px] lg:text-3xl">
                 Hi, I'm Bryan Palad
-                <Lottie
-                  options={loadingAnimation}
-                  style={style}
-                  height={40}
-                  width={40}
-                />
               </p>
               <h1 className="text-3xl text-center text-black dark:text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-left lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
                 I Build & Design <br /> Web Interfaces.

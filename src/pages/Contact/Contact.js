@@ -23,7 +23,7 @@ const Contact = ({
         {/* section title */}
         <Fade bottom>
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title text-black dark:text-white dark:before:content-contact before:content-contact2 relative before:absolute before:opcaity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
+            <h2 className="section-title text-black font-body normal text-3xl tracking-normal dark:text-white lg:uppercase lg:tracking-wider lg:text-5xl">
               Contact Me
             </h2>
             <p className="subtitle text-black dark:text-white">
