@@ -33,15 +33,6 @@ const Services = () => {
                 className="dark:bg-secondary bg-secondaryWhite grayscale hover:grayscale-0 p-6 rounded-2xl cursor-pointer"
                 key={index}
               >
-                <Link
-                  to="contact"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  className="transition-all duration-300"
-                >
                   <img className="mb-4" src={img} alt="services-img" />
                   <h4 className="text-xl font-semibold mb-2 dark:text-white text-black text-center">
                     {name}
@@ -49,7 +40,6 @@ const Services = () => {
                   <p className="text-justify dark:text-white tracking-tighter text-black">
                     {description}
                   </p>
-                </Link>
               </div>
             );
           })}
