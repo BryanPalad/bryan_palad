@@ -22,7 +22,7 @@
     height: 100%;
     left: 7px;
     top: 0;
-    background-color: #02b1c2;
+    background-color: #fc3d3d;
 }
 .timeline .circle-dot
 {
@@ -32,5 +32,5 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #02b1c2;
+    background-color: #fc3d3d;
 }

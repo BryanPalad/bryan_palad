@@ -1,12 +1,16 @@
 // projects images
 import teslaClone from "../../assets/img/projects/tesla.png";
+import mainTesla from '../../assets/img/projects/teslaclone.PNG';
 import expenseTracker from "../../assets/img/projects/expensesTracker.png";
+import mainExpense from "../../assets/img/projects/expensetracker.PNG";
 import weatherApp from "../../assets/img/projects/WeatherNewsApp.png";
+import mainWeather from "../../assets/img/projects/weatherapp.PNG";
 import cryptoverse from "../../assets/img/projects/CryptoverseApp.png";
+import mainCrypto from "../../assets/img/projects/Cryptoverse.PNG";
 import collegeProject from "../../assets/img/projects/FernandezDentalClinic.PNG";
 import myPortfolio from "../../assets/img/projects/firstPortfolio.png";
+import oldPortfolio from "../../assets/img/projects/oldportfolio.PNG";
 import modernresolve from "../../assets/img/projects/modernresolve.PNG";
-
 // college project modal
 import slider1 from "../../assets/img/projects/FernandezDentalClinic.PNG";
 import slider2 from "../../assets/img/projects/fdc_signup.PNG";
@@ -18,7 +22,7 @@ import slider5 from "../../assets/img/projects/FDC_dashboard.PNG";
 export const projectsData = [
     {
       id: "1",
-      image: teslaClone,
+      image: mainTesla,
       name: "Tesla UI",
       category: "mini projects",
       description: ['React Js','Styled Components','CSS'],
@@ -28,7 +32,7 @@ export const projectsData = [
     },
     {
       id: "2",
-      image: expenseTracker,
+      image: mainExpense,
       name: "Expense Tracker",
       category: "mini projects",
       description: ['React Js','Redux','MUI'],
@@ -38,7 +42,7 @@ export const projectsData = [
     },
     {
       id: "3",
-      image: cryptoverse,
+      image: mainCrypto,
       name: "Cryptoverse",
       category: "mini projects",
       description: ['React Js','Redux','2 Api','Ant Design'],
@@ -48,7 +52,7 @@ export const projectsData = [
     },
     {
       id: "4",
-      image: weatherApp,
+      image: mainWeather,
       name: "Weather/News App",
       category: "mini projects",
       description: ['React Js','Redux','3 Api','MUI'],
@@ -58,7 +62,7 @@ export const projectsData = [
     },
     {
       id: "5",
-      image: myPortfolio,
+      image: oldPortfolio,
       name: "My First Portfolio",
       category: "mini projects",
       description: ['React Js','Redux','MUI','Email Js'],

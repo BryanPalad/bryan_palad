@@ -54,7 +54,7 @@ const AppTabPanel = (props) => {
                 onChange={handleChange}
                 textColor="primary"
                 aria-label="basic tabs example"
-                TabIndicatorProps={{ style: { backgroundColor: "#02b1c2" } }}
+                TabIndicatorProps={{ style: { backgroundColor: "#fc3d3d" } }}
                 centered
               >
                 <Tab

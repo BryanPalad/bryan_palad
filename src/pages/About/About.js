@@ -29,7 +29,7 @@ const About = () => {
                 <h2 className="uppercase drop-shadow-lg shadow-black text-3xl tracking-normal text-black dark:text-white font-body mb-3 lg:text-6xl lg:tracking-wider lg:font-extrabold">
                   About Me
                 </h2>
-                <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center font-semibold dark:font-normal md:flex-row lg:justify-start">
+                <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center font-semibold md:flex-row lg:justify-start">
                   Front-End Web Developer{" "}
                   <span className="hidden md:block"> 🚀 </span>
                   <span> Aspiring Full Stack Developer</span>
@@ -49,7 +49,7 @@ const About = () => {
                   offset={-70}
                   className="transition-all duration-300"
                 >
-                  <button className="mt-5 btn btn-md text-white dark:text-black bg-accent hover:bg-accent-hover transition-all gap-1.5">
+                  <button className="mt-5 btn btn-md text-white bg-accent hover:bg-accent-hover transition-all gap-1.5">
                     Hire me <BsEmojiSmile className="hidden lg:block" />
                   </button>
                 </Link>
@@ -63,7 +63,7 @@ const About = () => {
                   offset={-70}
                   className="transition-all duration-300"
                 >
-                  <button className="mt-5 btn btn-md text-white dark:text-black bg-accent hover:bg-accent-hover transition-all gap-1.5">
+                  <button className="mt-5 btn btn-md text-white bg-accent hover:bg-accent-hover transition-all gap-1.5">
                     Projects <SiSemanticweb className="hidden lg:block" />
                   </button>
                 </Link>

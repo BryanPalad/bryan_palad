@@ -67,7 +67,7 @@ const ContactFields = (props) => {
         <p className="errorTextArea"> {formErrors.message}</p>
         <button
           type="submit"
-          className="btn btn-lg text-white dark:text-black bg-accent hover:bg-accent-hover flex gap-2"
+          className="btn btn-lg text-white bg-accent hover:bg-accent-hover flex gap-2"
         >
           Send{ing} Message
           <ClipLoader

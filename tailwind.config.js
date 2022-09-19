@@ -42,8 +42,8 @@ module.exports = {
         tertiaryWhite: '#f5f8fa',
         error: '#bd321c', //red
         accent: {
-          DEFAULT: '#42cef5', //skyblue
-          hover: '#3ae2f2', //lightskyblue
+          DEFAULT: '#fc3d3d', // lightred
+          hover: '#f20202', // red
         },
         paragraph: '#878e99',
       },

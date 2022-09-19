@@ -50,7 +50,7 @@ const Project = ({ item }) => {
     <>
       <div key={item.id} className="flex flex-col items-center text-center">
         <div className="mb-4 relative">
-          <img className="rounded-xl dark:bg-white bg-none hover:scale-105 duration-300" src={item.image} alt="" />
+          <img className="rounded-xl dark:bg-white bg-none h-full w-full lg:h-[200px] hover:scale-105 duration-300" src={item.image} alt="" />
         </div>
         <div className="flex gap-8 mb-2">
           {item.pointer ? (
@@ -119,7 +119,7 @@ const Project = ({ item }) => {
             </>
           )}
         </div>
-        <AppChip chipArray={item.description} style={{color: "#42cef5", fontWeight: 400}} variant={'outlined'} direction={'row'} spacing={0.5}/>
+        <AppChip chipArray={item.description} style={{color: "#fc3d3d", fontWeight: 600}} variant={'outlined'} direction={'row'} spacing={0.5}/>
         <p className="capitalize text-accent text-sm mb-3">
           {/* {item.description} */}
         </p>
