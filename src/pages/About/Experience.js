@@ -15,12 +15,12 @@ const Experience = () => {
             <h3 className="timeline-date flex flex-row gap-x-2 mb-2 text-accent font-semibold dark:font-normal">
               <FiCalendar/> <span className="mt-[-3px] font-body">{item.date}</span>
             </h3>
-            <h4 className="timeline-title mb-2 font-black font-logo text-md text-black dark:text-white uppercase">{item.designation}</h4>
-            <p className="timeline-text text-justify text-black dark:text-white" style={{ marginBottom: "20px" }}>
-              <span className='font-medium'>{item.subtitle}</span> - {item.desc1}
+            <h4 className="timeline-title mb-2 font-black font-body text-md text-black dark:text-white uppercase">{item.designation}</h4>
+            <p className="timeline-text tracking-tight text-justify text-black dark:text-white" style={{ marginBottom: "20px" }}>
+              <span className='font-medium text-lg text-accent'>{item.subtitle}</span> - {item.desc1}
             </p>
-            <p className="timeline-text text-black dark:text-white text-md text-justify">
-              <span className='font-medium'>{item.subtitle2}</span> - {item.desc2}
+            <p className="timeline-text tracking-tight text-black dark:text-white text-md text-justify">
+              <span className='font-medium text-lg text-accent'>{item.subtitle2}</span> - {item.desc2}
             </p>
           </div>
           ) 
