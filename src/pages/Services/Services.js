@@ -30,7 +30,7 @@ const Services = () => {
             const { name, description, img } = service;
             return (
               <div
-                className="dark:bg-secondary bg-secondaryWhite grayscale hover:grayscale-0 p-6 rounded-2xl cursor-pointer"
+                className="dark:bg-secondary bg-secondaryWhite grayscale hover:grayscale-0 p-6 rounded-bl-[50px] rounded-tr-[50px] cursor-pointer"
                 key={index}
               >
                   <img className="mb-4" src={img} alt="services-img" />

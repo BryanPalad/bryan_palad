@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import downloadble resume
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
-import profile from "../../assets/img/gradpic.jpg";
+import profile from "../../assets/img/my_pic.png";
 // import fade effect
 import Fade from "react-reveal/Fade";
 //import down icon
@@ -53,7 +53,7 @@ const Hero = () => {
           <Fade right>
             {/* right-side */}
             <div className="hidden lg:flex flex-1 justify-center items-center h-full">
-              <img className="h-1/2 rounded-full" src={profile} alt="" />
+              <img className="h-[50%] rounded-full grayscale hover:grayscale-0 duration-300" src={profile} alt="" />
             </div>
           </Fade>
         </div>
