@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 // import Link
 import { Link } from "react-scroll";
 //import picture
-import profile from "../../assets/img/gradpic.jpg";
+import profile from "../../assets/img/my_pic.png";
 // import darkk mode or light mode
 import ThemeSwitch from "../ThemeSwitch";
 
@@ -80,7 +80,7 @@ const NavMobile = () => {
         {/* profile image */}
         <img
           src={profile}
-          className="h-[150px] w-[150px] rounded-full mb-8 lg:hidden"
+          className="h-1/5 rounded-full mb-8 lg:hidden"
           alt=""
         />
         {/* mapping navigation data */}
