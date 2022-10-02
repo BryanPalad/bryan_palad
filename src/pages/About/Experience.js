@@ -12,7 +12,7 @@ const Experience = () => {
           return (
             <div className="timeline-item"  key={index}>
             <div className="circle-dot"></div>
-            <h3 className="timeline-date flex flex-row gap-x-2 mb-2 font-semibold dark:font-normal">
+            <h3 className="timeline-date flex flex-row text-black gap-x-2 mb-2 font-semibold dark:font-normal dark:text-white">
               <FiCalendar/> <span className="mt-[-3px] font-body">{item.date}</span>
             </h3>
             <h4 className="timeline-title mb-2 font-black font-body text-md text-black dark:text-white uppercase">{item.designation}</h4>
