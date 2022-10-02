@@ -82,7 +82,7 @@ export const projectsData = [
     {
       id: "7",
       image: modernresolve,
-      name: "Modern Resolve Ecommerce (On Progress)",
+      name: "Modern Resolve Ecommerce (In Progress)",
       category: "real world project",
       description: ['React Js','MUI','PostgreSQL', 'Python'],
       pointer: false,
