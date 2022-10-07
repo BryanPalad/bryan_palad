@@ -1,9 +1,7 @@
 import html from "../../assets/img/skills/html5.png";
 import css from "../../assets/img/skills/css3.png";
 import js from "../../assets/img/skills/js.png";
-import java from "../../assets/img/skills/java.png";
 import php from "../../assets/img/skills/php.png";
-import csharp from "../../assets/img/skills/c-sharp.png";
 import react from "../../assets/img/skills/reactjs.png";
 import redux from "../../assets/img/skills/redux.png";
 import git from "../../assets/img/skills/git.png";
@@ -11,7 +9,7 @@ import mysql from "../../assets/img/skills/mysql.png";
 import vscode from '../../assets/img/skills/vscode.png';
 import bootstrap from '../../assets/img/skills/bootstrap.png';
 import mui from "../../assets/img/skills/mui.png";
-import antdesign from "../../assets/img/skills/antdesign.png";
+import laravel from "../../assets/img/skills/laravel.png";
 import tailwind from "../../assets/img/skills/tailwind.png";
 import npm from "../../assets/img/skills/npm.png";
 
@@ -26,19 +24,16 @@ export const skills = [
       image: js,
     },
     {
-      image: java,
+      image: react,
     },
     {
-      image: csharp,
+      image: redux,
     },
     {
       image: php,
     },
     {
-      image: react,
-    },
-    {
-      image: redux,
+      image: laravel,
     },
     {
       image: mysql,
@@ -55,9 +50,7 @@ export const skills = [
     {
       image: mui,
     },
-    {
-      image: antdesign,
-    },
+
     {
       image: tailwind,
     },
