@@ -25,7 +25,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      <BackToTop />
+      {/* <BackToTop /> */}
       <MessengerCustomerChat
     pageId="107355401442459"
     appId="1139779766745326"
