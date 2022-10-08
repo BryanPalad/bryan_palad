@@ -1,16 +1,12 @@
 // projects images
-import teslaClone from "../../assets/img/projects/tesla.png";
 import mainTesla from '../../assets/img/projects/teslaclone.PNG';
-import expenseTracker from "../../assets/img/projects/expensesTracker.png";
 import mainExpense from "../../assets/img/projects/expensetracker.PNG";
-import weatherApp from "../../assets/img/projects/WeatherNewsApp.png";
 import mainWeather from "../../assets/img/projects/weatherapp.PNG";
-import cryptoverse from "../../assets/img/projects/CryptoverseApp.png";
 import mainCrypto from "../../assets/img/projects/Cryptoverse.PNG";
 import collegeProject from "../../assets/img/projects/FernandezDentalClinic.PNG";
-import myPortfolio from "../../assets/img/projects/firstPortfolio.png";
 import oldPortfolio from "../../assets/img/projects/oldportfolio.PNG";
 import modernresolve from "../../assets/img/projects/modernresolve.PNG";
+import ezwork from "../../assets/img/projects/ezwork.PNG";
 // college project modal
 import slider1 from "../../assets/img/projects/FernandezDentalClinic.PNG";
 import slider2 from "../../assets/img/projects/fdc_signup.PNG";
@@ -88,6 +84,16 @@ export const projectsData = [
       pointer: false,
       demo: "https://pre-prodmodernresolve.vercel.app",
       github: "https://github.com/JMSevilla/mdr_ecom_fe",
+    },
+    {
+      id: "8",
+      image: ezwork,
+      name: "ezWork Online Job Portal (In Progress)",
+      category: "mini projects",
+      description: ['Laravel','TailwindCss','MySQL'],
+      pointer: false,
+      demo: "",
+      github: "https://github.com/BryanPalad/ezWork-app",
     },
   ];
   

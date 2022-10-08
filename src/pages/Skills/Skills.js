@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section className="bg-tertiaryWhite dark:bg-tertiary py-12">
       <div className="mx-auto px-1">
-        <Fade left>
+        <Fade bottom>
           <h2 className="text-3xl text-center text-black dark:text-white font-medium mt-[-10px] mb-10 md:hidden">
             Technical Skills
           </h2>
