@@ -27,8 +27,8 @@ function App() {
       <Footer />
       {/* <BackToTop /> */}
       <MessengerCustomerChat
-    pageId="107355401442459"
-    appId="1139779766745326"
+    pageId="100003732552299"
+    appId="2582835238526292"
   />
     </div>
   );
