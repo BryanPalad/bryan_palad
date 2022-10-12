@@ -9,7 +9,7 @@ import {
   Testimonials,
   Contact,
 } from "./pages";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import { Header, Footer, BackToTop } from "./components";
 
@@ -25,11 +25,11 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      {/* <BackToTop /> */}
-      <MessengerCustomerChat
+      <BackToTop />
+      {/* <MessengerCustomerChat
     pageId="100003732552299"
     appId="2582835238526292"
-  />
+  /> */}
     </div>
   );
 }
