@@ -23,7 +23,7 @@ export const projectsData = [
       category: "mini projects",
       description: ['React Js','Styled Components','CSS'],
       pointer: false,
-      demo: "https://teslacloneui.netlify.app/",
+      demo: "https://teslaui-eight.vercel.app/",
       github: "https://github.com/BryanPalad/Tesla-clone",
     },
     {
@@ -33,7 +33,7 @@ export const projectsData = [
       category: "mini projects",
       description: ['React Js','Redux','MUI'],
       pointer: false,
-      demo: "https://expensetrackermini.netlify.app/",
+      demo: "https://expensestracker-five.vercel.app/",
       github: "https://github.com/BryanPalad/expenses_tracker_redux",
     },
     {
@@ -82,7 +82,7 @@ export const projectsData = [
       category: "real world project",
       description: ['React Js','MUI','PostgreSQL', 'Python'],
       pointer: false,
-      demo: "https://pre-prodmodernresolve.vercel.app",
+      demo: "",
       github: "https://github.com/JMSevilla/mdr_ecom_fe",
     },
     {
