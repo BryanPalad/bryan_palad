@@ -8,3 +8,4 @@ export {default as AppTextArea} from './TextArea/TextArea';
 export {default as AppTextField} from './TextField/Textfield';
 export {default as TypingEffect} from './TypingEffect/TypinEffect';
 export {default as BackToTop} from './BackToTop';
+export {default as ApplicationCard} from './Card/Card';
