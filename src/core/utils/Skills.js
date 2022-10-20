@@ -12,6 +12,7 @@ import mui from "../../assets/img/skills/mui.png";
 import laravel from "../../assets/img/skills/laravel.png";
 import tailwind from "../../assets/img/skills/tailwind.png";
 import npm from "../../assets/img/skills/npm.png";
+import postgre from "../../assets/img/skills/postgre.png";
 
 export const skills = [
     {
@@ -39,10 +40,10 @@ export const skills = [
       image: mysql,
     },
     {
-      image: git,
+      image: postgre,
     },
     {
-      image: vscode,
+      image: git,
     },
     {
       image: bootstrap,

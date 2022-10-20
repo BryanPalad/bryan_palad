@@ -53,7 +53,7 @@ const Hero = () => {
           <Fade right>
             {/* right-side */}
             <div className="hidden lg:flex flex-1 justify-center items-center h-full">
-              <img className="h-[50%] rounded-full grayscale hover:grayscale-0 duration-300" src={profile} alt="" />
+              <img className="h-[50%] heroBannerImg grayscale hover:grayscale-0 duration-500" src={profile} alt="" />
             </div>
           </Fade>
         </div>

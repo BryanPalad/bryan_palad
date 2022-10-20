@@ -65,7 +65,7 @@ const Project = ({ item }) => {
             height="140"
             image={item.image}
             alt="portfolio images"
-            className='transition hover:scale-105 duratio-300'
+            className='transition hover:scale-105 duration-300'
           />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -77,7 +77,7 @@ const Project = ({ item }) => {
                 </Typography>
                 <AppChip
                   chipArray={item.techStacks}
-                  style={{ color: "#fc3d3d", fontWeight: 500 }}
+                  style={{ color: "#fc3d3d", fontWeight: 600 }}
                   variant={"outlined"}
                   direction={"row"}
                   spacing={0.2}
