@@ -13,6 +13,7 @@ import laravel from "../../assets/img/skills/laravel.png";
 import tailwind from "../../assets/img/skills/tailwind.png";
 import npm from "../../assets/img/skills/npm.png";
 import postgre from "../../assets/img/skills/postgre.png";
+import sass from "../../assets/img/skills/sass.svg";
 
 export const skills = [
     {
@@ -20,6 +21,9 @@ export const skills = [
     },
     {
       image: css,
+    },
+    {
+      image: sass,
     },
     {
       image: js,
@@ -44,9 +48,6 @@ export const skills = [
     },
     {
       image: git,
-    },
-    {
-      image: bootstrap,
     },
     {
       image: mui,

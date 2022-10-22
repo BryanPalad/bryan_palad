@@ -22,7 +22,7 @@ export const projectsData = [
       name: "Tesla UI",
       category: "mini projects",
       description: 'Mini project that helps me to get familiar in responsive web development (Media queries and flex box).',
-      techStacks: ['React Js','Styled Components','CSS'],
+      techStacks: ['React Js','Styled Components','SCSS'],
       pointer: false,
       demo: "https://teslaui-eight.vercel.app/",
       github: "https://github.com/BryanPalad/Tesla-clone",
