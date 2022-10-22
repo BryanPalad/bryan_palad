@@ -50,6 +50,9 @@ export const skills = [
       image: git,
     },
     {
+      image: bootstrap,
+    },
+    {
       image: mui,
     },
 
@@ -58,6 +61,9 @@ export const skills = [
     },
     {
       image: npm,
+    },
+    {
+      image: vscode,
     },
   ];
   

@@ -10,7 +10,7 @@ const Skills = () => {
           <h2 className="text-3xl text-center text-black dark:text-white font-medium mt-[-10px] mb-10 md:hidden">
             Technical Skills
           </h2>
-          <div className="grid flex flex-col grid-cols-2 md:grid-flow-row md:grid-cols-7 lg:grid-cols-14 gap-y-5">
+          <div className="grid flex flex-col grid-cols-2 md:grid-flow-row md:grid-cols-8 lg:grid-cols-16 gap-y-5">
             {skills.map((item, index) => {
               return (
                 <div className="flex item-center justify-center" key={index}>
