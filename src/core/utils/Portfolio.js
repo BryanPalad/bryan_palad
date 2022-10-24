@@ -97,7 +97,7 @@ export const projectsData = [
       image: ezwork,
       name: (<span>ezWork Online Job Portal <br/>(In Progress)</span>),
       category: "mini projects",
-      description: 'A simple CRUD online job portal like jobstreet/ indeed built in laravel 9 framework, tailwind css and MySQL as database.',
+      description: 'A simple CRUD online job portal like jobstreet/ indeed built in laravel 9 framework, tailwind css and PostgreSQL as database.',
       techStacks: ['Laravel','TailwindCss','PostgreSQL'],
       pointer: false,
       demo: "http://shrouded-bayou-07829.herokuapp.com/",
