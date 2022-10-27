@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
 import profile from "../../assets/img/my_pic.png";
-// import fade effect
-import Fade from "react-reveal/Fade";
 //import down icon
 import { CgChevronDown } from "react-icons/cg";
 // import typing effect data
@@ -25,13 +23,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] flex items-center bg-primaryWhite dark:bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
+      className="h-[100vh] flex flex-col items-center bg-primaryWhite dark:bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
-      <div className="container bg-fixed mx-auto h-full flex flex-col justify-center">
-        <div className="flex items-center h-full pt-8">
+      <div className="container bg-fixed mx-auto h-full flex flex-col justify-between lg:justify-center">
+        <div className="flex flex-col items-center h-1/2 gap-4 pt-0 lg:gap-0 lg:pt-8 lg:flex-row lg:h-full ">
           {/* left-side */}
-          <Fade left>
-            <div className="flex-1 flex flex-col items-center lg:items-start">
+            <div className="order-2 flex-1 flex flex-col items-center lg:items-start lg:order-1">
               <p className="flex text-xl text-black dark:text-white mb-[22px] lg:text-3xl">
                 Hi, I'm Bryan Palad
               </p>
@@ -49,16 +46,13 @@ const Hero = () => {
                 </button>
               </a>
             </div>
-          </Fade>
-          <Fade right>
             {/* right-side */}
-            <div className="hidden lg:flex flex-1 justify-center items-center h-full">
-              <img className="h-[50%] heroBannerImg grayscale hover:grayscale-0 duration-500 rounded-3xl" src={profile} alt="" />
+            <div className="order-1 lg:flex flex-1 justify-center items-center h-full lg:order-2">
+              <img className="h-[90%] heroBannerImg duration-500 rounded-3xl lg:h-[50%]" src={profile} alt="" />
             </div>
-          </Fade>
         </div>
         {/* down-arrow */}
-        <div className="flex justify-center w-full items-center">
+        {/* <div className="hidden flex justify-center w-full items-center">
           <Link
             to="about"
             activeClass="active"
@@ -74,7 +68,7 @@ const Hero = () => {
               } mb-2 h-14 w-20 text-black dark:text-white cursor-pointer animate-bounce transition delay-300`}
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

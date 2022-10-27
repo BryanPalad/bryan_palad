@@ -80,7 +80,7 @@ const NavMobile = () => {
         {/* profile image */}
         <img
           src={profile}
-          className="h-1/5 rounded-full mb-8 lg:hidden"
+          className="navImg h-1/5 rounded-full mb-8 lg:hidden"
           alt=""
         />
         {/* mapping navigation data */}

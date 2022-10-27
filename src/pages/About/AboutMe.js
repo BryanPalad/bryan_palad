@@ -13,7 +13,7 @@ const AboutMe = ({ age }) => {
         and 3 months as an Admin Staff (QMS Assistant and Inventory Controller).
         I learned so much about my role. But suddenly there was a feeling that
         it's not challenging anymore , and i think it's about time to get back
-        to coding then i've decided to leave my current job, refresh my
+        to coding. Then i've decided to leave my current job, refresh my
         knowledge and pursue this programming career.
       </p>
     </div>

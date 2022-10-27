@@ -30,11 +30,11 @@ const Services = () => {
             const { name, description, img } = service;
             return (
               <div
-                className="dark:bg-secondary bg-secondaryWhite grayscale hover:grayscale-0 p-6 rounded-bl-[50px] rounded-tr-[50px] cursor-pointer"
+                className="p-8"
                 key={index}
               >
-                  <img className="mb-4" src={img} alt="services-img" />
-                  <h4 className="text-xl font-semibold mb-2 dark:text-white text-black text-center">
+                  <img className="mb-4 h-[60%] mx-auto" src={img} alt="services-img" />
+                  <h4 className="text-2xl font-semibold mb-2 dark:text-white text-black text-center">
                     {name}
                   </h4>
                   <p className="text-justify dark:text-white tracking-tighter text-black">

@@ -1,7 +1,7 @@
 //services image
-import responsive from "../../assets/img/services/responsivedesign.jpg";
-import webdevelopment from "../../assets/img/services/webdevelopment.jpg";
-import inprogress from "../../assets/img/services/unknown.jpg";
+import responsive from "../../assets/img/services/webdesign.svg";
+import webdevelopment from "../../assets/img/services/webdevelopment.svg";
+import inprogress from "../../assets/img/services/inprogress.svg";
 
 // services
 export const services = [
@@ -9,7 +9,7 @@ export const services = [
       img: webdevelopment,
       name: "Web Development",
       description:
-        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS",
+        "Mostly preferred front-end web development projects. I am proficient in HTML, CSS, JavaScript(ES6) and have a basic to mid knowledge on React JS.",
     },
     {
       img: responsive,
@@ -21,6 +21,6 @@ export const services = [
       img: inprogress,
       name: "In Progress",
       description:
-        "Planning to learn prog. languages such as typescript, advance java w/spring, python or any language for backend development.",
+        "Planning to learn other technologies/languages such as python, react native, typescript, node js or any language for backend development.",
     },
   ];

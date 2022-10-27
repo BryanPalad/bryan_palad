@@ -38,5 +38,9 @@
 }
 
 .heroBannerImg {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.navImg {
+  clip-path: ellipse(50% 50% at 50% 50%);
 }
