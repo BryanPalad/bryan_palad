@@ -5,7 +5,9 @@ module.exports = {
     fontFamily: {
       primary: 'Playfair Display',
       body: 'Work Sans',
-      logo: 'Proxima Nova'
+      logo: 'Proxima Nova',
+      main: 'Abyssinica SIL',
+      subtitle: 'Roboto Slab'
     },
     container: {
       padding: {

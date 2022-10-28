@@ -29,13 +29,13 @@ const Hero = () => {
         <div className="flex flex-col items-center h-1/2 gap-4 pt-0 lg:gap-0 lg:pt-8 lg:flex-row lg:h-full ">
           {/* left-side */}
             <div className="order-2 flex-1 flex flex-col items-center lg:items-start lg:order-1">
-              <p className="flex text-xl text-black dark:text-white mb-[22px] lg:text-3xl">
+              <p className="flex text-xl font-subtitle text-black dark:text-white mb-[22px] lg:text-3xl">
                 Hi, I'm Bryan Palad
               </p>
               <h1 className="text-3xl text-center text-black dark:text-white font-bold leading-[44px] md:text-5xl md:leading-tight lg:text-left lg:text-7xl lg:leading-[1.2] md:tracking-[-2px]">
                 I Build & Design <br /> Web Interfaces.
               </h1>
-              <p className="pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
+              <p className="font-subtitle pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
                 I'm a <span className="-ml-2">&nbsp;</span>
                 <TypingEffect typingText={typing}/>
               </p>
@@ -48,27 +48,9 @@ const Hero = () => {
             </div>
             {/* right-side */}
             <div className="order-1 lg:flex flex-1 justify-center items-center h-full lg:order-2">
-              <img className="h-[90%] heroBannerImg duration-500 rounded-3xl lg:h-[50%]" src={profile} alt="" />
+              <img className="h-[90%] heroBannerImg grayscale hover:grayscale-0 duration-500 rounded-3xl lg:h-[50%]" src={profile} alt="" />
             </div>
         </div>
-        {/* down-arrow */}
-        {/* <div className="hidden flex justify-center w-full items-center">
-          <Link
-            to="about"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="transition-all duration-300"
-          >
-            <CgChevronDown
-              className={`${
-                arrow ? "opacity-0" : ""
-              } mb-2 h-14 w-20 text-black dark:text-white cursor-pointer animate-bounce transition delay-300`}
-            />
-          </Link>
-        </div> */}
       </div>
     </section>
   );

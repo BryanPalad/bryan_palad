@@ -1,13 +1,13 @@
 import React from "react";
 // import smooth scrolling
 import { Link } from "react-scroll";
-// import fade effect
-import { Fade } from "react-reveal";
 // import icons
 import { BsEmojiSmile } from "react-icons/bs";
 import { SiSemanticweb } from "react-icons/si";
 // import components
 import AboutMe from "./AboutMe";
+import aboutMe from '../../assets/img/about/aboutme.svg';
+
 import Experience from "./Experience";
 import Trainings from "./Trainings";
 
@@ -25,7 +25,6 @@ const About = () => {
         <div className="flex flex-col xl:flex-row gap-24 lg:w-2/3">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
-              <Fade bottom>
                 <h2 className="uppercase drop-shadow-lg shadow-black text-3xl tracking-normal text-black dark:text-white font-body mb-3 lg:text-6xl lg:tracking-wider lg:font-extrabold">
                   About Me
                 </h2>
@@ -34,11 +33,10 @@ const About = () => {
                   <span className="hidden md:block"> 🚀 </span>
                   <span> Aspiring Full Stack Developer</span>
                 </p>
-              </Fade>
               <hr className="mb-6 opacity-5" />
+              <img src={aboutMe} alt='about me' className='block bounce mb-8 lg:hidden'/>
               <AboutMe age={age} />
             </div>
-            <Fade bottom>
               <div className="flex gap-3 lg:flex-row">
                 <Link
                   to="contact"
@@ -68,17 +66,19 @@ const About = () => {
                   </button>
                 </Link>
               </div>
-            </Fade>
           </div>
         </div>
+
         <div className="flex flex-col mt-14 gap-24 w-full xl:flex-row lg:w-1/2 lg:ml-20 lg:mt-0">
-          <AppTabPanel
+          <img src={aboutMe} alt='about me' className='hidden bounce lg:block'/>
+          {/* <AppTabPanel
             TabTitle1={"🔓 Experience"}
             TabTitle2={"📃 Trainings / Cert"}
             Tab1={<Experience />}
             Tab2={<Trainings />}
-          />
+          /> */}
         </div>
+        
       </div>
     </section>
   );

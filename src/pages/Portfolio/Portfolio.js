@@ -1,8 +1,7 @@
 import React from "react";
 //import component
 import Projects from "./Projects";
-// import fade effect
-import { Fade } from "react-reveal";
+
 const Portfolio = () => {
   return (
     <section
@@ -10,7 +9,6 @@ const Portfolio = () => {
       className="section bg-secondaryWhite dark:bg-secondary min-h-[1400px]"
     >
       <div className="container mx-auto">
-        <Fade bottom>
           <div className="flex flex-col items-center text-center">
             <h2 className="section-title normal font-body text-3xl tracking-normal text-black dark:text-white lg:text-5xl lg:tracking-wider lg:uppercase">
               My projects
@@ -19,7 +17,6 @@ const Portfolio = () => {
               Here are some of my built projects...
             </p>
           </div>
-        </Fade>
         <Projects />
       </div>
     </section>

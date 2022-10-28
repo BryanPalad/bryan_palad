@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = ({ age }) => {
   return (
     <div>
-      <p className="mb-2 text-justify text-black dark:text-white">
+      <p className="font-subtitle mb-2 text-justify text-black dark:text-white">
         {age} years old, BS Information Technology graduate year 2019, became a
         lead programmer on our 2 thesis projects and had a hands-on experience
         using C#, MySQL and PHP. That was the time when i started to like programming.

@@ -18,52 +18,69 @@ import sass from "../../assets/img/skills/sass.svg";
 export const skills = [
     {
       image: html,
+      title: 'HTML'
     },
     {
       image: css,
+      title: 'CSS'
+
     },
     {
       image: sass,
+      title: 'SASS'
     },
     {
       image: js,
+      title: 'JavaScript'
     },
     {
       image: react,
+      title: 'React Js'
     },
     {
       image: redux,
+      title: 'React Redux'
     },
     {
       image: php,
+      title: 'PHP'
     },
     {
       image: laravel,
+      title: 'Laravel'
     },
     {
       image: mysql,
+      title: 'MySQL'
     },
     {
       image: postgre,
+      title: 'PostgreSQL'
     },
     {
       image: git,
+      title: 'GIT'
     },
     {
       image: bootstrap,
+      title: 'Bootstrap'
     },
     {
       image: mui,
+      title: 'Material UI'
     },
 
     {
       image: tailwind,
+      title: 'Tailwind CSS'
     },
     {
       image: npm,
+      title: 'NPM'
     },
     {
       image: vscode,
+      title: 'VS Code'
     },
   ];
   
