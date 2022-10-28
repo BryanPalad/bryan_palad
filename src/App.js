@@ -10,7 +10,6 @@ import {
   Contact,
 } from "./pages";
 // import MessengerCustomerChat from 'react-messenger-customer-chat';
-
 import { Header, Footer, BackToTop } from "./components";
 
 function App() {

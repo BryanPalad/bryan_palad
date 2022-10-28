@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "../../core/utils/Skills";
-
+import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <section className="bg-tertiaryWhite dark:bg-tertiary py-12">
@@ -11,7 +11,10 @@ const Skills = () => {
         <div className="grid flex flex-col grid-cols-2 md:grid-flow-row md:grid-cols-8 lg:grid-cols-16 gap-y-8">
           {skills.map((item, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 className="flex flex-col items-center justify-center gap-2.5"
                 key={index}
               >
@@ -20,8 +23,10 @@ const Skills = () => {
                   src={item.image}
                   alt="skill"
                 />
-                <h2 className="text-lg font-subtitle font-medium text-black dark:text-white">{item.title}</h2>
-              </div>
+                <h2 className="text-lg font-subtitle font-medium text-black dark:text-white">
+                  {item.title}
+                </h2>
+              </motion.div>
             );
           })}
         </div>

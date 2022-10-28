@@ -22,6 +22,8 @@ import { CardContent } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import CardMedia from '@mui/material/CardMedia';
 
+import {motion} from 'framer-motion';
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -55,7 +57,9 @@ const Project = ({ item }) => {
   const handleClose = () => setOpen(false);
 
   return (
-    <>
+    <motion.div initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}>
       <ApplicationCard
         className="h-[100%] w-full rounded-xl"
         children={
@@ -167,7 +171,7 @@ const Project = ({ item }) => {
           </>
         }
       />
-    </>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,4 @@
 import React from "react";
-// import fade effect
-import { Fade } from "react-reveal";
 // import contact data
 import { contact } from "../../core/utils/Contact";
 // import contactfield component
@@ -21,7 +19,6 @@ const Contact = ({
     <section id="contact" className="section bg-primaryWhite dark:bg-primary">
       <div className="container mx-auto">
         {/* section title */}
-        <Fade bottom>
           <div className="flex flex-col items-center text-center">
             <h2 className="section-title text-black font-body normal text-3xl tracking-normal dark:text-white lg:uppercase lg:tracking-wider lg:text-5xl">
               Contact Me
@@ -31,7 +28,6 @@ const Contact = ({
               information below, I am very responsive to messages...
             </p>
           </div>
-        </Fade>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">
           {/* INFO */}
           <div className="flex flex-1 flex-col space-y-8 mb-12 lg:items-left lg:justify-start lg:mb-0 lg:pt-2 lg:text-left lg:items-start">
