@@ -28,6 +28,7 @@ const Services = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
+                transition={{ duration: 1 }}
                 className="p-8"
                 key={index}
               >

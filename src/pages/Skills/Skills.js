@@ -15,6 +15,7 @@ const Skills = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
+                transition={{ duration: 1 }}
                 className="flex flex-col items-center justify-center gap-2.5"
                 key={index}
               >

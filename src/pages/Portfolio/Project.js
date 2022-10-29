@@ -59,7 +59,10 @@ const Project = ({ item }) => {
   return (
     <motion.div initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
-    viewport={{ once: true }}>
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+    >
+      
       <ApplicationCard
         className="h-[100%] w-full rounded-xl"
         children={

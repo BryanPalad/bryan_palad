@@ -27,6 +27,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
+        transition={{ duration: 1 }}
         className="container mx-auto mt-2 flex lg:flex-row flex-col"
       >
         <div className="flex flex-col xl:flex-row gap-24 lg:w-2/3">
