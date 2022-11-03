@@ -21,7 +21,7 @@ const Footer = () => {
                   const { href, icon } = item;
                   return (
                     <a
-                      className="text-black dark:text-white text-3xl text-base hover:text-accent-hover dark:hover:text-accent-hover"
+                      className="text-black dark:text-white text-3xl text-base bg-secondaryWhite dark:bg-secondary p-2 rounded-full hover:scale-110 duration-300"
                       href={href}
                       target="_blank"
                       rel="noreferrer"
