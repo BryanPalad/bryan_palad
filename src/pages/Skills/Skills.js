@@ -20,7 +20,7 @@ const Skills = () => {
                 key={index}
               >
                 <img
-                  className="h-[70px] w-[70px] lg:h-[80px] lg:w-[85px] hover:scale-110 duration-300"
+                  className="h-[70px] w-[70px] lg:h-[80px] lg:w-[85px]"
                   src={item.image}
                   alt="skill"
                 />

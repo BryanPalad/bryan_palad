@@ -41,7 +41,7 @@ const Hero = () => {
               </p>
               {/* </p> */}
               <a href={CV} download>
-                <button className="btn btn-md text-white bg-accent hover:bg-accent-hover md:btn-lg transition-all">
+                <button className="btn btn-md text-white bg-accent rounded-full hover:bg-accent-hover md:btn-lg transition-all">
                   Download CV
                 </button>
               </a>

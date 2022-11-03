@@ -18,7 +18,7 @@ const Header = () => {
     <header className={`${bg ? 'bg-secondaryWhite dark:bg-secondary h-20' : 'bg-primaryWhite dark:bg-primary h-24'} flex items-center fixed top-0 w-full text-black dark:text-white z-10 transition-all duration-300`}>
         <div className='container mx-auto h-full flex items-center justify-between'>
            {/* LOGO */}
-            <p className='text-2xl font-subtitle lg:text-3xl flex items-center gap-2'><SiNintendogamecube/>BRYAN</p>
+            <a href="#"><p className='text-2xl font-subtitle lg:text-3xl flex items-center gap-2 cursor-pointer hover:text-accent duration-300'><SiNintendogamecube/>BRYAN</p></a>
             {/* NAV */}
             <div className='hidden lg:block'>
                 <Nav />

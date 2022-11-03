@@ -8,7 +8,7 @@ import { social } from "../../core/utils/Header";
 
 const Footer = () => {
   return (
-    <footer className="bg-tertiaryWhite dark:bg-tertiary py-12">
+    <footer className="bg-tertiaryWhite dark:bg-tertiary py-10 lg:py-8">
       <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between">
             {/* social icons    */}
@@ -36,16 +36,16 @@ const Footer = () => {
 
             {/* copyright */}
             <div className='flex flex-col gap-2'>
-            <p className="text-black dark:text-white">
+            <p className="text-black dark:text-white text-center">
               &copy; 2022 Bryan Palad. All rights reserved.
             </p>
-            <p className="text-black dark:text-white">
-              Made with React Js and TailwindCSS 🔥
+            <p className="text-black dark:text-white text-center">
+              Made with React Js and TailwindCSS
             </p>
             </div>
             {/* LOGO */}
             <div>
-              <p className="text-3xl font-logo text-black dark:text-white flex items-center gap-2">
+              <p className="text-3xl font-logo text-black dark:text-white flex items-center gap-2  cursor-pointer hover:text-accent duration-300">
               BRYAN<SiNintendogamecube />
               </p>
             </div>

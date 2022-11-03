@@ -29,7 +29,7 @@ const Services = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className="p-8"
+                className="p-8 transition hover:scale-105 duration-300"
                 key={index}
               >
                 <img
