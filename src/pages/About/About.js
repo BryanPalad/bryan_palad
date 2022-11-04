@@ -2,7 +2,7 @@ import React from "react";
 // import smooth scrolling
 import { Link } from "react-scroll";
 // import icons
-import { BsEmojiSmile } from "react-icons/bs";
+import { BsCheckCircleFill} from "react-icons/bs";
 import { SiSemanticweb } from "react-icons/si";
 // import components
 import AboutMe from "./AboutMe";
@@ -27,7 +27,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8}}
+        transition={{ duration: 0.8 }}
         className="container mx-auto mt-2 flex lg:flex-row flex-col"
       >
         <div className="flex flex-col xl:flex-row gap-24 lg:w-2/3">
@@ -59,8 +59,15 @@ const About = () => {
                 offset={-70}
                 className="transition-all duration-300"
               >
-                <button className="mt-5 btn btn-md text-white bg-accent hover:bg-accent-hover transition-all gap-1.5">
-                  Hire me <BsEmojiSmile className="hidden lg:block" />
+                <button className="mt-5">
+                  <span className="shadow"></span>
+                  <span className="edge"></span>
+                  <span className="front text">
+                    {" "}
+                    <div className="flex items-center gap-1.5">
+                      Hire me <BsCheckCircleFill className="hidden lg:block" />
+                    </div>
+                  </span>
                 </button>
               </Link>
 
@@ -73,8 +80,15 @@ const About = () => {
                 offset={-70}
                 className="transition-all duration-300"
               >
-                <button className="mt-5 btn btn-md text-white bg-accent hover:bg-accent-hover transition-all gap-1.5">
-                  Projects <SiSemanticweb className="hidden lg:block" />
+                <button className="mt-5">
+                  <span className="shadow"></span>
+                  <span className="edge"></span>
+                  <span className="front text">
+                    {" "}
+                    <div className="flex items-center gap-1.5">
+                      Projects <SiSemanticweb className="hidden lg:block" />
+                    </div>
+                  </span>
                 </button>
               </Link>
             </div>

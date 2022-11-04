@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import downloadble resume
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
 import profile from "../../assets/img/my_pic.png";
-//import down icon
-import { CgChevronDown } from "react-icons/cg";
 // import typing effect data
 import { typing } from "../../core/utils/Hero";
-// import smooth scrolling
-import { Link } from "react-scroll";
+
 import {TypingEffect} from "../../components";
 
 const Hero = () => {
-  const [arrow, setArrow] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      return window.scrollY > 20 ? setArrow(true) : setArrow(false);
-    });
-  });
 
   return (
     <section
@@ -41,9 +31,15 @@ const Hero = () => {
               </p>
               {/* </p> */}
               <a href={CV} download>
-                <button className="btn btn-md text-white bg-accent rounded-full hover:bg-accent-hover md:btn-lg transition-all">
+              <button>
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> Download CV
+                </span>
+              </button>
+                {/* <button className="btn btn-md text-white bg-accent rounded-full hover:bg-accent-hover md:btn-lg transition-all">
                   Download CV
-                </button>
+                </button> */}
               </a>
             </div>
             {/* right-side */}
