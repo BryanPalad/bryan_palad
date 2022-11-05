@@ -20,9 +20,9 @@ import {
 } from "../../components";
 import { CardContent } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
-import CardMedia from '@mui/material/CardMedia';
+import CardMedia from "@mui/material/CardMedia";
 
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 
 const style = {
   position: "absolute",
@@ -57,23 +57,22 @@ const Project = ({ item }) => {
   const handleClose = () => setOpen(false);
 
   return (
-    <motion.div initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
     >
-      
       <ApplicationCard
         className="h-[100%] w-full rounded-xl"
         children={
           <>
-          <CardMedia
-            component="img"
-            height="140"
-            image={item.image}
-            alt="portfolio images"
-            className='transition hover:scale-105 duration-300'
-          />
+            <CardMedia
+              component="img"
+              height="140"
+              image={item.image}
+              alt="portfolio images"
+            />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {item.name}

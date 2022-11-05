@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between">
             {/* social icons    */}
-            <div className='flex flex-col gap-4 justify-center items-center'>
+            <div className='flex flex-col gap-3 justify-center items-center'>
               <div>
                 <p className='text-black dark:text-white font-medium'>Follow Me @</p>
               </div>

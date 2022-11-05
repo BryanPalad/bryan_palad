@@ -2,7 +2,7 @@ import React from "react";
 // import spinner
 import { ClipLoader } from "react-spinners";
 // import reusable component
-import {AppTextField, AppTextArea} from "../../components";
+import { AppTextField, AppTextArea } from "../../components";
 
 const ContactFields = (props) => {
   const {
@@ -65,18 +65,21 @@ const ContactFields = (props) => {
           placeholder="Your message"
         />
         <p className="errorTextArea"> {formErrors.message}</p>
-        <button
-          type="submit"
-          className="btn btn-lg text-white bg-accent hover:bg-accent-hover flex gap-2"
-        >
-          Send{ing} Message
-          <ClipLoader
-            className="pl-2"
-            color={"white"}
-            loading={loading}
-            size={10}
-          />
-          <audio ref={audioPlayer} src={NotificationSound} />
+
+        <button>
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">
+            {" "}
+            Send{ing} Message
+            <ClipLoader
+              className="pl-2 ml-1"
+              color={"white"}
+              loading={loading}
+              size={10}
+            />
+            <audio ref={audioPlayer} src={NotificationSound} />
+          </span>
         </button>
       </form>
     </>
