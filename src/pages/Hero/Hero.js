@@ -26,7 +26,7 @@ const Hero = () => {
                 I Build & Design <br /> Web Interfaces.
               </h1>
               <p className="font-subtitle pt-4 pb-8 text-lg text-black dark:text-white md:pt-6 md:pb-8 max-w-[480px] lg:text-3xl text-center lg:text-left ">
-                I'm a <span className="-ml-2">&nbsp;</span>
+                I'm a <span className="ml-[-2]">&nbsp;</span>
                 <TypingEffect typingText={typing}/>
               </p>
               {/* </p> */}
@@ -37,9 +37,6 @@ const Hero = () => {
                 <span class="front text"> Download CV
                 </span>
               </button>
-                {/* <button className="btn btn-md text-white bg-accent rounded-full hover:bg-accent-hover md:btn-lg transition-all">
-                  Download CV
-                </button> */}
               </a>
             </div>
             {/* right-side */}
