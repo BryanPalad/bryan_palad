@@ -300,14 +300,12 @@ button:focus:not(:focus-visible) {
   height: 1.5em;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   --background: white;
   position: absolute;
@@ -335,7 +333,7 @@ button:focus:not(:focus-visible) {
 }
 
 input:checked + .slider {
-  background-color: red;
+  background-color: black;
 }
 
 input:checked + .slider:before {
