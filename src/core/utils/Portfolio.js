@@ -74,7 +74,7 @@ export const projectsData = [
     {
       id: "6",
       image: collegeProject,
-      name: "Online Appointment System for Fernandez Dental Clinic",
+      name: "Patient Information and Online Appointment System for Fernandez Dental Clinic",
       category: "college project",
       description: 'College capstone that helps dental clinic on their appointment schedules with automatic sms notification etc.',
       techStacks: ['PHP','CSS','Bootstrap','MySQL'],

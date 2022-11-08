@@ -74,9 +74,15 @@ const Project = ({ item }) => {
               alt="portfolio images"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              {item.pointer ? (<>
+                <Typography gutterBottom variant="h6" component="div">
                 {item.name}
               </Typography>
+              </>):(<>
+                <Typography gutterBottom variant="h5" component="div">
+                {item.name}
+              </Typography>
+              </>)}
               <Box className="flex flex-col gap-4">
                 <Typography variant="body2" color="text.secondary">
                   {item.description}
@@ -107,8 +113,8 @@ const Project = ({ item }) => {
                     <Fade in={open}>
                       <Box sx={style}>
                         <div className="flex justify-center items-center">
-                          <h1 className="text-black mt-2 font-logo items-center md:mb-2 text-center text-2xl md:text-2xl lg:text-center">
-                            Online Appointment System for Fernandez Dental
+                          <h1 className="text-black mt-2 font-logo items-center md:mb-2 text-center text-lg md:text-2xl lg:text-center">
+                            Patient Information and Online Appointment System for Fernandez Dental
                             Clinic
                           </h1>
                           <AiOutlineClose
