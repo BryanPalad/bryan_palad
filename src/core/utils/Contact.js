@@ -15,10 +15,10 @@ export const contact = [
       subtitle: "My permanent address...",
       description: "Brgy. Banlic, Cabuyao Laguna 4025",
     },
-    {
-      icon: <TbPhone />,
-      title: "Phone Number",
-      subtitle: "You can call / text me at...",
-      description: "+63-945-560-2846",
-    },
+    // {
+    //   icon: <TbPhone />,
+    //   title: "Phone Number",
+    //   subtitle: "You can call / text me at...",
+    //   description: "+63-945-560-2846",
+    // },
   ];

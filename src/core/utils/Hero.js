@@ -1,6 +1,6 @@
 export const typing = [
-    " Front-End Developer",
+    " Software Developer",
     " Aspiring Full Stack Dev",
     " Enthusiastic Dev",
-    " BSIT Graduate",
+    " Front End Engineer",
   ];

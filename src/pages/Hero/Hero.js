@@ -2,7 +2,7 @@ import React from "react";
 // import downloadble resume
 import CV from "../../assets/files/Bryan_Palad.pdf";
 // import profile image
-import profile from "../../assets/img/my_pic.png";
+import profile from "../../assets/img/profile.jpg";
 // import typing effect data
 import { typing } from "../../core/utils/Hero";
 

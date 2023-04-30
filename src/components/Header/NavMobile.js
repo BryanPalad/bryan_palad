@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 // import Link
 import { Link } from "react-scroll";
 //import picture
-import profile from "../../assets/img/my_pic.png";
+import profile from "../../assets/img/profile.jpg";
 // import darkk mode or light mode
 import ThemeSwitch from "../ThemeSwitch";
 

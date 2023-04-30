@@ -14,6 +14,10 @@ import tailwind from "../../assets/img/skills/tailwind.png";
 import npm from "../../assets/img/skills/npm.png";
 import postgre from "../../assets/img/skills/postgre.png";
 import sass from "../../assets/img/skills/sass.svg";
+import vue from "../../assets/img/skills/vuejs.png";
+import figma from "../../assets/img/skills/figma.png";
+import spring from "../../assets/img/skills/spring.png";
+import postman from "../../assets/img/skills/postman.png";
 
 export const skills = [
     {
@@ -81,6 +85,22 @@ export const skills = [
     {
       image: vscode,
       title: 'VS Code'
+    },
+    {
+      image: vue,
+      title: 'Vue Js'
+    },
+    {
+      image: figma,
+      title: 'Figma'
+    },
+    {
+      image: spring,
+      title: 'Spring Boot'
+    },
+    {
+      image: postman,
+      title: 'Postman'
     },
   ];
   
