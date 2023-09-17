@@ -71,10 +71,10 @@ const ContactEmail = () => {
 
     emailjs
       .sendForm(
-        "service_r3c2acf",
-        "gmail_template",
+        "service_xa2fvde",
+        "template_ehicxhu",
         form.current,
-        "GXerigEHG4Y5D03xO"
+        "CnWU3ywlNfni-GBdJ"
       )
       .then(
         (result) => {

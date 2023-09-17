@@ -17,17 +17,17 @@ import slider5 from "../../assets/img/projects/FDC_dashboard.PNG";
 
 // projects
 export const projectsData = [
-    {
-      id: "1",
-      image: oldPortfolio,
-      name: "My First Portfolio",
-      category: "mini projects",
-      description: 'My first portfolio that helps me refresh my knowledge in HTML, CSS and Javascript, converted into React Stack with emailjs integration.',
-      techStacks: ['React Js','Redux','MUI','Email Js'],
-      pointer: false,
-      demo: "https://bryanpaladfirst.netlify.app/",
-      github: "https://github.com/BryanPalad/my_portfolio",
-    },
+    // {
+    //   id: "1",
+    //   image: oldPortfolio,
+    //   name: "My First Portfolio",
+    //   category: "mini projects",
+    //   description: 'My first portfolio that helps me refresh my knowledge in HTML, CSS and Javascript, converted into React Stack with emailjs integration.',
+    //   techStacks: ['React Js','Redux','MUI','Email Js'],
+    //   pointer: false,
+    //   demo: "https://bryanpaladfirst.netlify.app/",
+    //   github: "https://github.com/BryanPalad/my_portfolio",
+    // },
     {
       id: "2",
       image: mainTesla,

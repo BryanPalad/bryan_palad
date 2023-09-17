@@ -37,9 +37,9 @@ const About = () => {
                 About Me
               </h2>
               <p className="mt-4 mb-4 text-accent flex flex-col gap-x-2 text-center justify-center font-semibold md:flex-row lg:justify-start">
-                Front-End Web Developer{" "}
+                Software Developer
                 <span className="hidden md:block"> 🚀 </span>
-                <span> Aspiring Full Stack Developer</span>
+                <span> Front End Engineer</span>
               </p>
               <hr className="mb-6 opacity-5" />
               <img

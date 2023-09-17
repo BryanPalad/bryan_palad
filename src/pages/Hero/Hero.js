@@ -1,6 +1,6 @@
 import React from "react";
 // import downloadble resume
-import CV from "../../assets/files/Bryan_Palad.pdf";
+import CV from "../../assets/files/BryanPalad_CV.pdf";
 // import profile image
 import profile from "../../assets/img/profile.jpg";
 // import typing effect data
