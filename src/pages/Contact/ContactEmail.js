@@ -26,25 +26,26 @@ const ContactEmail = () => {
     },
   });
 
-  useEffect(() => {
-    window.addEventListener("beforeunload", alertUser);
-    window.addEventListener("unload", handleTabClosing);
-    return () => {
-      window.removeEventListener("beforeunload", alertUser);
-      window.removeEventListener("unload", handleTabClosing);
-    };
-  });
+  // Use to add a prompt "Changes will not be saved"
+  // useEffect(() => {
+  //   window.addEventListener("beforeunload", alertUser);
+  //   window.addEventListener("unload", handleTabClosing);
+  //   return () => {
+  //     window.removeEventListener("beforeunload", alertUser);
+  //     window.removeEventListener("unload", handleTabClosing);
+  //   };
+  // });
 
-  const handleTabClosing = () => {
-    window.close();
-  };
+  // const handleTabClosing = () => {
+  //   window.close();
+  // };
 
-  const alertUser = (event) => {
-    if (initialValues !== undefined) {
-      event.preventDefault();
-      event.returnValue = "";
-    }
-  };
+  // const alertUser = (event) => {
+  //   if (initialValues !== undefined) {
+  //     event.preventDefault();
+  //     event.returnValue = "";
+  //   }
+  // };
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit ? sendEmail() : "") {

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiSearchEyeLine } from "react-icons/ri";
+import { IoLogoGooglePlaystore, IoNavigateCircleOutline } from "react-icons/io5";
+import { FaAppStore } from "react-icons/fa";
 // import for modal
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -74,26 +76,32 @@ const Project = ({ item }) => {
               alt="portfolio images"
             />
             <CardContent>
-              {item.pointer ? (<>
-                <Typography gutterBottom variant="h6" component="div">
-                {item.name}
-              </Typography>
-              </>):(<>
-                <Typography gutterBottom variant="h5" component="div">
-                {item.name}
-              </Typography>
-              </>)}
+              {item.pointer ? (
+                <>
+                  <Typography gutterBottom variant="h6" component="div">
+                   {item.name}
+                  </Typography>
+                </>
+              ) : (
+                <>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.name}
+                  </Typography>
+                </>
+              )}
               <Box className="flex flex-col gap-4">
                 <Typography variant="body2" color="text.secondary">
                   {item.description}
                 </Typography>
-                <AppChip
-                  chipArray={item.techStacks}
-                  style={{ color: "#fc3d3d", fontWeight: 600 }}
-                  variant={"outlined"}
-                  direction={"row"}
-                  spacing={0.2}
-                />
+                {item.techStacks && (
+                  <AppChip
+                    chipArray={item.techStacks}
+                    style={{ color: "#fc3d3d", fontWeight: 600 }}
+                    variant={"outlined"}
+                    direction={"row"}
+                    spacing={0.2}
+                  />
+                )}
               </Box>
             </CardContent>
             <CardActions>
@@ -114,8 +122,8 @@ const Project = ({ item }) => {
                       <Box sx={style}>
                         <div className="flex justify-center items-center">
                           <h1 className="text-black mt-2 font-logo items-center md:mb-2 text-center text-lg md:text-2xl lg:text-center">
-                            Patient Information and Online Appointment System for Fernandez Dental
-                            Clinic
+                            Patient Information and Online Appointment System
+                            for Fernandez Dental Clinic
                           </h1>
                           <AiOutlineClose
                             onClick={handleClose}
@@ -165,12 +173,31 @@ const Project = ({ item }) => {
                 <Box className="flex justify-between w-full gap-4 px-4">
                   <a href={item.demo} target="_blank" rel="noreferrer">
                     <p className="flex justify-center text-lg text-black font-semibold items-center gap-1 cursor-pointer hover:text-accent">
-                      Live Demo <FiExternalLink />
+                      {item.downloadable ? (
+                        <>
+                          Google Play <IoLogoGooglePlaystore />
+                        </>
+                      ) : (
+                        <>
+                        {item.category === 'work projects' && item.demo ? (<>
+                        Check Website <IoNavigateCircleOutline/></>)
+                        :
+                        (<>Live Demo <FiExternalLink /></>)}
+                        </>
+                      )}
                     </p>
                   </a>
                   <a href={item.github} target="_blank" rel="noreferrer">
                     <p className="flex justify-center text-lg text-black font-semibold items-center gap-1 cursor-pointer hover:text-accent">
-                      Github <FiGithub />
+                      {item.downloadable ? (
+                        <>
+                          App Store <FaAppStore />
+                        </>
+                      ) : (
+                        <>
+                          {!item.github ? (<></>): (<>Github <FiGithub /></>)}
+                        </>
+                      )}
                     </p>
                   </a>
                 </Box>

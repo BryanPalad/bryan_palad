@@ -5,10 +5,10 @@ const Skills = () => {
   return (
     <section className="bg-tertiaryWhite dark:bg-tertiary py-12">
       <div className="mx-auto px-1">
-        <h2 className="text-3xl text-center text-black dark:text-white font-medium mt-[-10px] mb-10 md:hidden">
+        <h2 className="text-3xl text-center text-black dark:text-white font-medium font-subtitle mt-[-10px] mb-10">
           Technical Skills
         </h2>
-        <div className="grid flex flex-col grid-cols-2 md:grid-flow-row md:grid-cols-8 lg:grid-cols-16 gap-y-8">
+        <div className="grid flex-col grid-cols-2 md:grid-flow-row md:grid-cols-8 lg:grid-cols-16 gap-y-8">
           {skills.map((item, index) => {
             return (
               <motion.div
@@ -20,7 +20,7 @@ const Skills = () => {
                 key={index}
               >
                 <img
-                  className="h-[70px] w-[70px] lg:h-[80px] lg:w-[85px]"
+                  className="h-[70px] w-[70px] lg:h-[80px] lg:w-[85px] transition hover:scale-110 duration-300"
                   src={item.image}
                   alt="skill"
                 />

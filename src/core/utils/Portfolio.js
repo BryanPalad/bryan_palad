@@ -1,5 +1,5 @@
 // projects images
-import mainTesla from '../../assets/img/projects/teslaclone.PNG';
+import mainTesla from '../../assets/img/projects/tesla.png';
 import mainExpense from "../../assets/img/projects/expensetracker.PNG";
 import mainWeather from "../../assets/img/projects/weatherapp.PNG";
 import mainCrypto from "../../assets/img/projects/Cryptoverse.PNG";
@@ -8,6 +8,9 @@ import oldPortfolio from "../../assets/img/projects/oldportfolio.PNG";
 import modernresolve from "../../assets/img/projects/modernresolve.PNG";
 import ezwork from "../../assets/img/projects/ezwork.PNG";
 import sneaks from "../../assets/img/projects/Sneaks.PNG";
+import payloroApp from "../../assets/img/projects/payloro.jpg";
+import payloroWeb from "../../assets/img/projects/payloroWeb.PNG";
+
 // college project modal
 import slider1 from "../../assets/img/projects/FernandezDentalClinic.PNG";
 import slider2 from "../../assets/img/projects/fdc_signup.PNG";
@@ -33,7 +36,8 @@ export const projectsData = [
       image: mainTesla,
       name: "Tesla UI",
       category: "mini projects",
-      description: 'Mini project that helps me to get familiar in responsive web development (Media queries, flex box and SCSS).',
+      downloadable: false,
+      description: 'Mini project that helps me utilize my skills in responsive web development (Media queries, flex box and SCSS).',
       techStacks: ['React Js','Styled Components','SCSS'],
       pointer: false,
       demo: "https://teslaui-eight.vercel.app/",
@@ -41,31 +45,22 @@ export const projectsData = [
     },
     {
       id: "3",
-      image: mainExpense,
-      name: "Expense Tracker",
+      image: sneaks,
+      name: "Sneaks Ecommerce",
       category: "mini projects",
-      description: 'A simple CRUD expenses tracker using react js and redux toolkit with localstorage to store expenses history on browser.',
-      techStacks: ['React Js','Redux','MUI'],
+      downloadable: false,
+      description: "An Ecommerce project selling different brands  of shoes with cart functionality and responsive web design ",
+      techStacks: ['React Js','Redux','Tailwind CSS'],
       pointer: false,
-      demo: "https://expensestracker-five.vercel.app/",
-      github: "https://github.com/BryanPalad/expenses_tracker_redux",
+      demo: "https://sneaks-commerce.vercel.app/",
+      github: "https://github.com/BryanPalad/SneaksCommerce",
     },
     {
       id: "4",
-      image: mainCrypto,
-      name: "Cryptoverse",
-      category: "mini projects",
-      description: 'App that shows all existing crypto coins and their details (price, description, ranking), and news (CoinRanking, Bing News API).',
-      techStacks: ['React Js','Redux','2 Api','Ant Design'],
-      pointer: false,
-      demo: "https://cryptoversemini.netlify.app/",
-      github: "https://github.com/BryanPalad/Cryptoverse",
-    },
-    {
-      id: "5",
       image: mainWeather,
       name: "Weather/News App",
       category: "mini projects",
+      downloadable: false,
       description: "An app that gets the actual weather status and news, built in react js, redux toolkit and used 3 API's (Open Weather API's and Bing News Api). ",
       techStacks: ['React Js','Redux','3 Api','MUI'],
       pointer: false,
@@ -73,15 +68,28 @@ export const projectsData = [
       github: "https://github.com/BryanPalad/Weather-News-App",
     },
     {
-      id: "6",
-      image: sneaks,
-      name: "Sneaks Ecommerce",
+      id: "5",
+      image: mainCrypto,
+      name: "Cryptoverse",
       category: "mini projects",
-      description: "An Ecommerce project selling different brands  of shoes with cart functionality and responsive web design ",
-      techStacks: ['React Js','Redux','Tailwind'],
+      downloadable: false,
+      description: 'App that shows all existing crypto coins and their details (price, description, ranking), and news (CoinRanking, Bing News API).',
+      techStacks: ['React Js','Redux','2 Api','Ant Design'],
       pointer: false,
-      demo: "https://sneaks-commerce.vercel.app/",
-      github: "https://github.com/BryanPalad/SneaksCommerce",
+      demo: "https://cryptoversemini.netlify.app/",
+      github: "https://github.com/BryanPalad/Cryptoverse",
+    },
+    {
+      id: "6",
+      image: mainExpense,
+      name: "Expense Tracker",
+      category: "mini projects",
+      downloadable: false,
+      description: 'A simple CRUD expenses tracker using react js and redux toolkit with localstorage to store expenses history on browser.',
+      techStacks: ['React Js','Redux','MUI'],
+      pointer: false,
+      demo: "https://expensestracker-five.vercel.app/",
+      github: "https://github.com/BryanPalad/expenses_tracker_redux",
     },
     // {
     //   id: "7",
@@ -108,12 +116,40 @@ export const projectsData = [
     {
       id: "9",
       image: collegeProject,
-      name: "Patient Information and Online Appointment System for Fernandez Dental Clinic",
+      name: "Online Appointment System for Fernandez Dental Clinic",
       category: "college project",
-      description: 'College capstone that helps dental clinic on their appointment schedules with automatic sms notification etc.',
+      downloadable: false,
+      description: 'A project that helps dental clinic on their appointment schedules with automatic sms notification etc.',
       techStacks: ['PHP','CSS','Bootstrap','MySQL'],
       pointer: true,
+      demo: false,
       github: "https://github.com/BryanPalad/FernandezDentalClinic",
+    },
+    {
+      id: "10",
+      image: payloroWeb,
+      name: "PayLoro Website",
+      category: "work projects",
+      downloadable: false,
+      description: 'App that provides a more convenient transaction processing method for customers, giving businesses that employ this technology a competitive edge in the market.',
+      techStacks: false,
+      pointer: false,
+      demo: "https://www.payloro.ph/#/",
+      github: false,
+    },
+    {
+      id: "11",
+      image: payloroApp,
+      name: "",
+      category: "work projects",
+      downloadable: true,
+      description: 'App that provides a more convenient transaction processing method for customers, giving businesses that employ this technology a competitive edge in the market.',
+      techStacks: false,
+      pointer: false,
+      demo: false,
+      github: false,
+      playStore: "https://play.google.com/store/apps/details?id=paylor.com",
+      appStore: "https://apps.apple.com/ph/app/payloro-app/id1524219078"
     },
   ];
   
@@ -129,7 +165,7 @@ export const projectsNav = [
       name: "college project",
     },
     {
-      name: "real world project",
+      name: "work projects",
     },
   ];
   

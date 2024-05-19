@@ -2,7 +2,7 @@ import React from "react";
 // import downloadble resume
 import CV from "../../assets/files/BryanPalad_CV.pdf";
 // import profile image
-import profile from "../../assets/img/profile.jpg";
+import profile from "../../assets/img/new_profile.jpg";
 // import typing effect data
 import { typing } from "../../core/utils/Hero";
 
@@ -41,7 +41,7 @@ const Hero = () => {
             </div>
             {/* right-side */}
             <div className="order-1 lg:flex flex-1 justify-center items-center h-full lg:order-2">
-              <img className="h-[90%] heroBannerImg grayscale hover:grayscale-0 duration-500 rounded-3xl lg:h-[50%]" src={profile} alt="" />
+              <img className="h-[90%] heroBannerImg grayscale hover:grayscale-0 duration-500 object-cover lg:h-[60%] lg:w-[80%]" src={profile} alt="" />
             </div>
         </div>
       </div>

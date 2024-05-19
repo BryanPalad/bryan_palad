@@ -16,10 +16,31 @@ import { motion } from "framer-motion";
 // import {AppTabPanel} from "../../components";
 
 const About = () => {
-  const date = new Date();
-  const year = date.getFullYear();
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
   const birthYear = 1999;
   const age = year - birthYear;
+
+  // Software||Web Development Career start day month and year.
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth() + 1; // Adding 1 to get the month starting from 1 (January is 1)
+  
+  const jobStartDate = new Date('2022-12-12'); // Start date in YYYY-MM-DD format
+  const jobStartYear = jobStartDate.getFullYear();
+  const jobStartMonth = jobStartDate.getMonth() + 1; // Adding 1 to get the month starting from 1 (January is 1)
+  const jobStartDay = jobStartDate.getDate();
+  
+  let yearsOfWork = currentYear - jobStartYear;
+  let monthsOfWork = currentMonth - jobStartMonth;
+  
+  // Adjust years and months if current day is earlier than job start day or month
+  if (currentDate.getDate() < jobStartDay) {
+      monthsOfWork--;
+  }
+  if (monthsOfWork < 0) {
+      yearsOfWork--;
+      monthsOfWork += 12;
+  }
 
   return (
     <section id="about" className="section bg-secondaryWhite dark:bg-secondary">
@@ -47,7 +68,7 @@ const About = () => {
                 alt="about me"
                 className="block bounce mb-8 lg:hidden"
               />
-              <AboutMe age={age} />
+              <AboutMe age={age} yearsOfWork={yearsOfWork} monthsOfWork={monthsOfWork}/>
             </div>
             <div className="flex gap-3 lg:flex-row">
               <Link

@@ -62,7 +62,7 @@
     @apply bg-white dark:bg-secondary resize-none w-full border-2 dark:border-0 dark:outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
   }
   .active {
-    @apply text-accent;
+    @apply text-accent font-semibold;
   }
   .errorTextInput {
     @apply mt-2 text-error
