@@ -12,16 +12,10 @@ const AboutMe = ({ age, yearsOfWork, monthsOfWork }) => {
         ignited my love for programming.
         <br />
         <br />
-        Following graduation, I transitioned on a different path, I worked for over 2 years
-        as an Admin Staff, where I honed my skills in efficiency, organization, and attention to detail. 
-        However, I soon realized that my true passion lay in the world of coding, where 
-        I yearned for new challenges.
-        <br/>
-        <br/>
-        I reacquainted myself with the latest technologies and fully embraced a career 
-        in software/web development. Today, with {yearsOfWork} year and {monthsOfWork} months of dev work experience, 
-        I specialize in crafting elegant and user-friendly front-end web interfaces, 
-        bridging the gap between technology and human interaction.
+        My first job was as an Admin Staff for over 2 years, where I learned about efficiency and organization. 
+        But I soon realized my passion was coding, so I dove back into it, 
+        learning all the latest tech. Now, with {yearsOfWork} year and {monthsOfWork} months of dev work experience, 
+        I specialize in web development, focusing on creating sleek and user-friendly interfaces.
       </p>
     </div>
   );
